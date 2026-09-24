@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f3ede2">
+    <meta name="theme-color" content="#171511">
     <meta name="robots" content="noindex, nofollow">
     <meta name="description" content="Ristorante Vedetta a Brescia, dal 1959. Una prima bozza del nuovo sito tra cucina bresciana, menu stagionali e ospitalità.">
     <title>Ristorante Vedetta · Dal 1959 a Brescia</title>
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
     <script src="/script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
-    <div class="draft-ribbon"><span>Una prima bozza del nuovo sito Vedetta</span><span>Design in lavorazione</span></div>
+    <div class="draft-ribbon"><span>Anteprima privata · Ristorante Vedetta</span><span>Contenuti e immagini in revisione</span></div>
     <header class="site-header" id="inizio">
       <a class="wordmark" href="#inizio" aria-label="Vedetta, torna all'inizio">
         <span class="wordmark-small">ristorante</span>
@@ -43,18 +43,14 @@
             <a class="button button-light" href="#menu">Scopri i menu <span aria-hidden="true">↗</span></a>
             <a class="text-link text-link-light" href="#contatti">Prenota un tavolo <span aria-hidden="true">→</span></a>
           </div>
-          <div class="hero-signature">
-            <span class="signature-seal">V</span>
-            <span>Una storia a tavola<br><strong>dal 1959</strong></span>
-          </div>
+          <div class="hero-signature"><span>01 / 07</span><span class="signature-line" aria-hidden="true"></span><span>Il piacere di stare a tavola, dal 1959</span></div>
         </div>
         <div class="hero-image-wrap">
           <img class="hero-image" src="/assets/vedetta-placeholder.jpg" alt="Fotografia d'atmosfera di una sala ristorante, usata come segnaposto per la prima bozza" fetchpriority="high">
           <span class="image-note">Fotografia provvisoria · l’esterno verrà creato</span>
-          <div class="hero-image-index" aria-hidden="true"><span>01</span><span>—</span><span>07</span></div>
         </div>
       </section>
-      <div class="hero-bottom-bar" aria-hidden="true"><span>La tradizione ha un posto a tavola</span><span class="asterisk">✳</span><span>Ristorante Vedetta · Brescia</span></div>
+      <div class="hero-bottom-bar" aria-hidden="true"><span>La tradizione ha un posto a tavola</span><span class="bar-line"></span><span>Ristorante Vedetta · Brescia</span></div>
 
       <section class="pillars section-shell" aria-labelledby="pillars-title">
         <div class="pillars-intro"><span class="section-kicker">L'essenza della Vedetta</span><h2 id="pillars-title">Ci sono cose che<br><em>restano.</em></h2></div>
@@ -79,9 +75,9 @@
         <div class="section-heading menu-heading"><div><span class="section-kicker">A tavola con noi</span><h2 id="menu-title">Le nostre <em>carte.</em></h2></div><p>Scopri il menu estivo e la carta dei vini. Le proposte invernali e il dopo cena saranno disponibili prossimamente.</p></div>
         <div class="menu-tabs" role="group" aria-label="Scegli una carta">
           <button class="menu-tab active" type="button" data-menu="estivo" aria-controls="menu-panel" aria-expanded="true"><span class="menu-card-image cover-estivo"><img src="/assets/menu-estivo-cover.png" alt="" loading="lazy"></span><span class="menu-card-bottom"><span><small>01 · Le stagioni</small><strong>Menu estivo</strong></span><b aria-hidden="true">↗</b></span></button>
-          <button class="menu-tab" type="button" data-menu="invernale" aria-controls="menu-panel" aria-expanded="false"><span class="menu-card-image cover-invernale"><span class="cover-ornament" aria-hidden="true">V</span><span>La stagione<br>d'inverno</span></span><span class="menu-card-bottom"><span><small>02 · Le stagioni</small><strong>Menu invernale</strong></span><b aria-hidden="true">↗</b></span></button>
+          <button class="menu-tab" type="button" data-menu="invernale" aria-controls="menu-panel" aria-expanded="false"><span class="menu-card-image cover-invernale"><span class="cover-type" aria-hidden="true">Inverno</span><span>La stagione d'inverno</span></span><span class="menu-card-bottom"><span><small>02 · Le stagioni</small><strong>Menu invernale</strong></span><b aria-hidden="true">↗</b></span></button>
           <button class="menu-tab" type="button" data-menu="vini" aria-controls="menu-panel" aria-expanded="false"><span class="menu-card-image cover-vini"><img src="/assets/carta-vini-cover.png" alt="" loading="lazy"></span><span class="menu-card-bottom"><span><small>03 · La cantina</small><strong>Carta dei vini</strong></span><b aria-hidden="true">↗</b></span></button>
-          <button class="menu-tab" type="button" data-menu="liquori" aria-controls="menu-panel" aria-expanded="false"><span class="menu-card-image cover-liquori"><span class="cover-ornament" aria-hidden="true">V</span><span>Il dopo cena</span></span><span class="menu-card-bottom"><span><small>04 · Il dopo cena</small><strong>Carta dei liquori</strong></span><b aria-hidden="true">↗</b></span></button>
+          <button class="menu-tab" type="button" data-menu="liquori" aria-controls="menu-panel" aria-expanded="false"><span class="menu-card-image cover-liquori"><span class="cover-type" aria-hidden="true">Liquori</span><span>Il dopo cena</span></span><span class="menu-card-bottom"><span><small>04 · Il dopo cena</small><strong>Carta dei liquori</strong></span><b aria-hidden="true">↗</b></span></button>
         </div>
         <div class="menu-panel" id="menu-panel" aria-live="polite"><div class="menu-loading">Caricamento della carta…</div></div>
         <p class="menu-notice">I prezzi sono ripresi dai PDF forniti per questa bozza. Prima della pubblicazione al pubblico andranno verificati con il ristorante. Per allergie e intolleranze, avvisa sempre il personale.</p>
