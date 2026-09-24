@@ -1,0 +1,729 @@
+{
+  "estivo": {
+    "title": "Menu estivo",
+    "pdf": "/assets/menu-estivo.pdf",
+    "groups": [
+      {
+        "name": "Antipasti",
+        "items": [
+          {
+            "name": "Prosciutto crudo di Parma e melone",
+            "price": "14 €",
+            "description": ""
+          },
+          {
+            "name": "Bresaola della Valtellina con rucola e grana",
+            "price": "14 €",
+            "description": ""
+          },
+          {
+            "name": "Affettato misto",
+            "price": "14 €",
+            "description": ""
+          },
+          {
+            "name": "Carpaccio di filetto di manzo con funghi porcini",
+            "price": "18 €",
+            "description": ""
+          },
+          {
+            "name": "Carpaccio di salmone scozzese affumicato",
+            "price": "18 €",
+            "description": ""
+          },
+          {
+            "name": "Vitello tonnato",
+            "price": "18 €",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Primi",
+        "items": [
+          {
+            "name": "Tortelloni di zucca alla mantovana",
+            "price": "12 €",
+            "description": ""
+          },
+          {
+            "name": "Tortelloni di ricotta e spinaci",
+            "price": "12 €",
+            "description": ""
+          },
+          {
+            "name": "Casoncelli al burro versato e salvia",
+            "price": "12 €",
+            "description": ""
+          },
+          {
+            "name": "Tagliatelle ai funghi porcini",
+            "price": "15 €",
+            "description": ""
+          },
+          {
+            "name": "Trittico della casa",
+            "price": "15 €",
+            "description": "Tagliatelle ai funghi porcini, tortelloni di ricotta e spinaci, ravioli alla panna"
+          }
+        ]
+      },
+      {
+        "name": "Dalla brace",
+        "items": [
+          {
+            "name": "Filetto di manzo",
+            "price": "24 €",
+            "description": ""
+          },
+          {
+            "name": "Filetto di cavallo",
+            "price": "24 €",
+            "description": ""
+          },
+          {
+            "name": "Bistecca di filetto di cavallo",
+            "price": "24 €",
+            "description": ""
+          },
+          {
+            "name": "Tagliata di manzo argentino",
+            "price": "22 €",
+            "description": ""
+          },
+          {
+            "name": "Costata di manzo irlandese",
+            "price": "22 €",
+            "description": ""
+          },
+          {
+            "name": "Fiorentina di manzo",
+            "price": "50 € / kg",
+            "description": ""
+          },
+          {
+            "name": "Grigliata mista",
+            "price": "18 €",
+            "description": "Pollo, salamina, costine e formaggio fuso"
+          },
+          {
+            "name": "Pollo ai ferri con patate",
+            "price": "12 €",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Dalla cucina",
+        "items": [
+          {
+            "name": "Filetto di manzo al pepe verde flambato al Cognac",
+            "price": "25 €",
+            "description": ""
+          },
+          {
+            "name": "Piatto del Roncher",
+            "price": "18 €",
+            "description": "Formaggio fuso, funghi porcini trifolati e polenta"
+          },
+          {
+            "name": "Scaloppine con funghi porcini e polenta",
+            "price": "20 €",
+            "description": ""
+          },
+          {
+            "name": "Fungo porcino impanato o trifolato",
+            "price": "20 €",
+            "description": ""
+          },
+          {
+            "name": "Formaggio fuso",
+            "price": "10 €",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Contorni",
+        "items": [
+          {
+            "name": "Funghi porcini trifolati",
+            "price": "10 €",
+            "description": ""
+          },
+          {
+            "name": "Insalata mista",
+            "price": "7 €",
+            "description": ""
+          },
+          {
+            "name": "Verdure grigliate",
+            "price": "7 €",
+            "description": ""
+          },
+          {
+            "name": "Patate al forno",
+            "price": "7 €",
+            "description": ""
+          },
+          {
+            "name": "Patate fritte",
+            "price": "7 €",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Dolci",
+        "items": [
+          {
+            "name": "Frutti di bosco",
+            "price": "9 €",
+            "description": ""
+          },
+          {
+            "name": "Torte e dolci",
+            "price": "9 €",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  "invernale": {
+    "title": "Menu invernale",
+    "groups": [],
+    "pending": "Il menu invernale sarà inserito quando ci fornirai la carta aggiornata."
+  },
+  "vini": {
+    "title": "Carta dei vini",
+    "pdf": "/assets/carta-vini.pdf",
+    "groups": [
+      {
+        "name": "Vini bianchi",
+        "items": [
+          {
+            "name": "Pinot Bianco A.A. Hofstatter",
+            "price": "24 €",
+            "description": "Trentino Alto Adige"
+          },
+          {
+            "name": "De Vite I.G.T Hofstatter",
+            "price": "24 €",
+            "description": "Trentino Alto Adige"
+          },
+          {
+            "name": "Gewurztraminer A.A. Hofstatter",
+            "price": "29 €",
+            "description": "Trentino Alto Adige"
+          },
+          {
+            "name": "Pinot bianco Jacobus Az. Agr. Averoldi",
+            "price": "15 €",
+            "description": "Lombardia"
+          },
+          {
+            "name": "Lugana Terecrea Pilardo",
+            "price": "24 €",
+            "description": "Lombardia"
+          },
+          {
+            "name": "Lugana DOC Vecchie Vigne",
+            "price": "28 €",
+            "description": "Lombardia"
+          },
+          {
+            "name": "Lugana Riserva Pilandro San Pietro",
+            "price": "28 €",
+            "description": "Lombardia"
+          },
+          {
+            "name": "Sauvignon Pitars",
+            "price": "30 €",
+            "description": "Friuli Venezia Giulia"
+          },
+          {
+            "name": "Friulano DOC Borgo delle oche",
+            "price": "33 €",
+            "description": "Friuli Venezia Giulia"
+          },
+          {
+            "name": "Vermentino Colli di Luni Monticello",
+            "price": "30 €",
+            "description": "Liguria"
+          },
+          {
+            "name": "Sur Sur Grillo Donnafugata",
+            "price": "24 €",
+            "description": "Sicilia"
+          },
+          {
+            "name": "Prìo Catarratto Donnafugata",
+            "price": "24 €",
+            "description": "Sicilia"
+          }
+        ]
+      },
+      {
+        "name": "Vini rosati",
+        "items": [
+          {
+            "name": "Chiaretto Valtenesi Az. Agr. Averoldi",
+            "price": "20 €",
+            "description": ""
+          },
+          {
+            "name": "Rosato Lumera (Sicilia) Donnafugata",
+            "price": "24 €",
+            "description": ""
+          },
+          {
+            "name": "Rosato Colli di Luni (Liguria) Monticello",
+            "price": "25 €",
+            "description": ""
+          },
+          {
+            "name": "Chiaretto Diamante (Lombardia) Comincioli",
+            "price": "34 €",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Vini bianchi esteri",
+        "items": [
+          {
+            "name": "Riesling Trochen Mosnella (DE) Dr Fisher",
+            "price": "30 €",
+            "description": ""
+          },
+          {
+            "name": "Sancerre Blanc Jean Revery",
+            "price": "32 €",
+            "description": ""
+          },
+          {
+            "name": "Chablis Chantemerle Boudin",
+            "price": "35 €",
+            "description": ""
+          },
+          {
+            "name": "Riesling Expression Agape",
+            "price": "37 €",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Bianchi al bicchiere",
+        "items": [
+          {
+            "name": "Pinot Bianco Jacobus Az. Agr. Averoldi",
+            "price": "6 €",
+            "description": ""
+          },
+          {
+            "name": "Sur Sur Grillo Donnafugata",
+            "price": "6 €",
+            "description": ""
+          },
+          {
+            "name": "Metodo Classico",
+            "price": "9 €",
+            "description": ""
+          },
+          {
+            "name": "Prìo bianco Donnafugata",
+            "price": "6 €",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Vini da dessert",
+        "items": [
+          {
+            "name": "Moscato Caterina (Piemonte) frizzante",
+            "price": "15 €",
+            "description": ""
+          },
+          {
+            "name": "Passito Castel Beseno Salizzoni",
+            "price": "28 €",
+            "description": ""
+          },
+          {
+            "name": "Muscat de Rivesaltes Lafage",
+            "price": "25 €",
+            "description": ""
+          },
+          {
+            "name": "Passito Averoldi",
+            "price": "19 €",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Le bolle",
+        "items": [
+          {
+            "name": "Valdobbiadene Prosecco Serena 1881",
+            "price": "22 €",
+            "description": "Metodo Charmat"
+          },
+          {
+            "name": "Valdobbiadene Prosecco Superiore Vedova",
+            "price": "22 €",
+            "description": "Metodo Charmat"
+          },
+          {
+            "name": "Franciacorta Brut Ferghettina",
+            "price": "38 €",
+            "description": "Franciacorta"
+          },
+          {
+            "name": "Franciacorta Brut Facchetti",
+            "price": "38 €",
+            "description": "Franciacorta"
+          },
+          {
+            "name": "Franciacorta Satèn Facchetti",
+            "price": "45 €",
+            "description": "Franciacorta"
+          },
+          {
+            "name": "Franciacorta Nature Facchetti",
+            "price": "42 €",
+            "description": "Franciacorta"
+          },
+          {
+            "name": "Franciacorta Rosé (Occ de Pernis) Facchetti",
+            "price": "45 €",
+            "description": "Franciacorta"
+          },
+          {
+            "name": "Franciacorta Satèn DOCG Ferghettina",
+            "price": "55 €",
+            "description": "Franciacorta"
+          },
+          {
+            "name": "Crémant d’ Alsace Brut G. Prestige Bestheim",
+            "price": "35 €",
+            "description": "Champagne e Crémant"
+          },
+          {
+            "name": "Crémant d’ Alsace Brut Laugner",
+            "price": "35 €",
+            "description": "Champagne e Crémant"
+          },
+          {
+            "name": "Crémant d’ Alsace Brut Rosé Laugner",
+            "price": "35 €",
+            "description": "Champagne e Crémant"
+          },
+          {
+            "name": "Prestige Grand Cru Dauvergne",
+            "price": "65 €",
+            "description": "Champagne e Crémant"
+          },
+          {
+            "name": "Saphir Brut P . D. Grand Cru Dauvergne",
+            "price": "75 €",
+            "description": "Champagne e Crémant"
+          },
+          {
+            "name": "Tour Eiffel Grand Cru Reserue Familiae",
+            "price": "85 €",
+            "description": "Champagne e Crémant"
+          },
+          {
+            "name": "Oeil de Pedrix Grand Cru",
+            "price": "80 €",
+            "description": "Champagne e Crémant"
+          },
+          {
+            "name": "Fromentin Leclapart Brut",
+            "price": "60 €",
+            "description": "Champagne e Crémant"
+          },
+          {
+            "name": "Champagne Brut Ruinart",
+            "price": "110 €",
+            "description": "Champagne e Crémant"
+          }
+        ]
+      },
+      {
+        "name": "Vini rossi",
+        "items": [
+          {
+            "name": "Marzemino d’Isera Ziresi Salizzoni",
+            "price": "29 €",
+            "description": "Trentino Alto Adige"
+          },
+          {
+            "name": "Lagrein Alto Adige Hofstatter",
+            "price": "26 €",
+            "description": "Trentino Alto Adige"
+          },
+          {
+            "name": "Pinot Nero Meczan A.A. Hofstatter",
+            "price": "26 €",
+            "description": "Trentino Alto Adige"
+          },
+          {
+            "name": "Teroldego Edmund Mach Istituto S. Michele",
+            "price": "29 €",
+            "description": "Trentino Alto Adige"
+          },
+          {
+            "name": "Cabernet Franc Pitars",
+            "price": "22 €",
+            "description": "Friuli Venezia Giulia"
+          },
+          {
+            "name": "Refosco dal Peduncolo Rosso Pitars",
+            "price": "22 €",
+            "description": "Friuli Venezia Giulia"
+          },
+          {
+            "name": "Merlot Borgo delle Oche",
+            "price": "24 €",
+            "description": "Friuli Venezia Giulia"
+          },
+          {
+            "name": "Barbera d’Asti Vignalina",
+            "price": "26 €",
+            "description": "Piemonte"
+          },
+          {
+            "name": "Dolcetto d’Alba Cascina Fontana",
+            "price": "32 €",
+            "description": "Piemonte"
+          },
+          {
+            "name": "Nebbiolo Illegale S.Cristina",
+            "price": "33 €",
+            "description": "Piemonte"
+          },
+          {
+            "name": "Nebbiolo d’Alba Nada Fiorenzo",
+            "price": "43 €",
+            "description": "Piemonte"
+          },
+          {
+            "name": "Barbaresco DOCG Nada Fiorenzo",
+            "price": "55 €",
+            "description": "Piemonte"
+          },
+          {
+            "name": "BaroloCiabot Berton La Morra",
+            "price": "52 €",
+            "description": "Piemonte"
+          },
+          {
+            "name": "Groppello Notorious Az. Agr. Averoldi",
+            "price": "15 €",
+            "description": "Lombardia"
+          },
+          {
+            "name": "Terre di Franciacorta Ferghettina",
+            "price": "24 €",
+            "description": "Lombardia"
+          },
+          {
+            "name": "Sebino Rosso Carpediem Facchetti",
+            "price": "28 €",
+            "description": "Lombardia"
+          },
+          {
+            "name": "Botticino Colle degli Ulivi Noventa",
+            "price": "27 €",
+            "description": "Lombardia"
+          },
+          {
+            "name": "Grippo Averoldi",
+            "price": "28 €",
+            "description": "Lombardia"
+          },
+          {
+            "name": "Valpolicella Ripasso superiore Soraighe",
+            "price": "28 €",
+            "description": "Veneto"
+          },
+          {
+            "name": "Valpolicella Ripasso San Rocco Tedeschi",
+            "price": "30 €",
+            "description": "Veneto"
+          },
+          {
+            "name": "Valpolicella Sup. Ruberpan Piero Pan",
+            "price": "34 €",
+            "description": "Veneto"
+          },
+          {
+            "name": "Valpolicella Superiore Roccolo Grassi",
+            "price": "40 €",
+            "description": "Veneto"
+          },
+          {
+            "name": "Amarone Marne 180 Tedeschi",
+            "price": "60 €",
+            "description": "Veneto"
+          },
+          {
+            "name": "Rosso Colli di Luni, Monticello",
+            "price": "24 €",
+            "description": "Liguria"
+          },
+          {
+            "name": "Poggio delle Faine Minini",
+            "price": "23 €",
+            "description": "Toscana"
+          },
+          {
+            "name": "Morellino di Scansano Poggio Brigante",
+            "price": "24 €",
+            "description": "Toscana"
+          },
+          {
+            "name": "Chianti Classico Perano Frescobaldi",
+            "price": "30 €",
+            "description": "Toscana"
+          },
+          {
+            "name": "Bolghieri Rosso Clarice Dario di Vaira",
+            "price": "32 €",
+            "description": "Toscana"
+          },
+          {
+            "name": "Morellino di Scansano Arsura Riserva",
+            "price": "40 €",
+            "description": "Toscana"
+          },
+          {
+            "name": "Chianti classico Castel Ruggero",
+            "price": "32 €",
+            "description": "Toscana"
+          },
+          {
+            "name": "Brunello Castelgiocondo Frescobaldi",
+            "price": "66 €",
+            "description": "Toscana"
+          },
+          {
+            "name": "Brunello di Montalcino Lazzeretti",
+            "price": "78 €",
+            "description": "Toscana"
+          },
+          {
+            "name": "Lambrusco Terre Verdiane Ceci",
+            "price": "20 €",
+            "description": "Emilia Romagna"
+          },
+          {
+            "name": "Otello Nero di Lambrusco Ceci",
+            "price": "22 €",
+            "description": "Emilia Romagna"
+          },
+          {
+            "name": "Rosso Piceno Superiore Velenosi",
+            "price": "20 €",
+            "description": "Marche e Umbria"
+          },
+          {
+            "name": "Montefalco Rosso Scacciadiavoli",
+            "price": "24 €",
+            "description": "Marche e Umbria"
+          },
+          {
+            "name": "Meaculpa Rimorso Minini",
+            "price": "25 €",
+            "description": "Puglia"
+          },
+          {
+            "name": "Negroamaro Tempio di Giano Vetrere",
+            "price": "25 €",
+            "description": "Puglia"
+          },
+          {
+            "name": "Negroamaro Riserva Lago della P . Vetrere",
+            "price": "35 €",
+            "description": "Puglia"
+          },
+          {
+            "name": "Primitivo del Salento Barone Pazzo",
+            "price": "35 €",
+            "description": "Puglia"
+          },
+          {
+            "name": "Sherazade Nero d’Avola Donnafugata",
+            "price": "24 €",
+            "description": "Sicilia"
+          },
+          {
+            "name": "Dea V. Etna Rosso DOC Donnafugata",
+            "price": "28 €",
+            "description": "Sicilia"
+          }
+        ]
+      },
+      {
+        "name": "Vini rossi esteri",
+        "items": [
+          {
+            "name": "Bordeaux Rouge Sup Chateau Haut Mayne",
+            "price": "26 €",
+            "description": ""
+          },
+          {
+            "name": "L’Envolée de Saint Emilion La Peletre",
+            "price": "36 €",
+            "description": ""
+          },
+          {
+            "name": "Bourgogne pinot noir Domaine Petitot",
+            "price": "46 €",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Rossi al bicchiere",
+        "items": [
+          {
+            "name": "Groppello Notorious Az. Agr. Averoldi",
+            "price": "6 €",
+            "description": ""
+          },
+          {
+            "name": "Terre di Franciacorta Ferghettina",
+            "price": "6 €",
+            "description": ""
+          },
+          {
+            "name": "Rosso Piceno Sup. Brecciarolo",
+            "price": "6 €",
+            "description": ""
+          },
+          {
+            "name": "Sherazade Nero d’Avola Donnafugata",
+            "price": "6 €",
+            "description": ""
+          },
+          {
+            "name": "Cabernet Franc Pitars",
+            "price": "6 €",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  "liquori": {
+    "title": "Carta dei liquori",
+    "groups": [],
+    "pending": "La carta dei liquori sarà inserita dopo aver ricevuto il menu e i prezzi."
+  }
+}

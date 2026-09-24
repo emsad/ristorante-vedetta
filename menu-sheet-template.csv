@@ -1,0 +1,127 @@
+﻿carta,categoria,nome,descrizione,prezzo,ordine,visibile
+estivo,Antipasti,Prosciutto crudo di Parma e melone,,14 €,1,SI
+estivo,Antipasti,Bresaola della Valtellina con rucola e grana,,14 €,2,SI
+estivo,Antipasti,Affettato misto,,14 €,3,SI
+estivo,Antipasti,Carpaccio di filetto di manzo con funghi porcini,,18 €,4,SI
+estivo,Antipasti,Carpaccio di salmone scozzese affumicato,,18 €,5,SI
+estivo,Antipasti,Vitello tonnato,,18 €,6,SI
+estivo,Primi,Tortelloni di zucca alla mantovana,,12 €,7,SI
+estivo,Primi,Tortelloni di ricotta e spinaci,,12 €,8,SI
+estivo,Primi,Casoncelli al burro versato e salvia,,12 €,9,SI
+estivo,Primi,Tagliatelle ai funghi porcini,,15 €,10,SI
+estivo,Primi,Trittico della casa,"Tagliatelle ai funghi porcini, tortelloni di ricotta e spinaci, ravioli alla panna",15 €,11,SI
+estivo,Dalla brace,Filetto di manzo,,24 €,12,SI
+estivo,Dalla brace,Filetto di cavallo,,24 €,13,SI
+estivo,Dalla brace,Bistecca di filetto di cavallo,,24 €,14,SI
+estivo,Dalla brace,Tagliata di manzo argentino,,22 €,15,SI
+estivo,Dalla brace,Costata di manzo irlandese,,22 €,16,SI
+estivo,Dalla brace,Fiorentina di manzo,,50 € / kg,17,SI
+estivo,Dalla brace,Grigliata mista,"Pollo, salamina, costine e formaggio fuso",18 €,18,SI
+estivo,Dalla brace,Pollo ai ferri con patate,,12 €,19,SI
+estivo,Dalla cucina,Filetto di manzo al pepe verde flambato al Cognac,,25 €,20,SI
+estivo,Dalla cucina,Piatto del Roncher,"Formaggio fuso, funghi porcini trifolati e polenta",18 €,21,SI
+estivo,Dalla cucina,Scaloppine con funghi porcini e polenta,,20 €,22,SI
+estivo,Dalla cucina,Fungo porcino impanato o trifolato,,20 €,23,SI
+estivo,Dalla cucina,Formaggio fuso,,10 €,24,SI
+estivo,Contorni,Funghi porcini trifolati,,10 €,25,SI
+estivo,Contorni,Insalata mista,,7 €,26,SI
+estivo,Contorni,Verdure grigliate,,7 €,27,SI
+estivo,Contorni,Patate al forno,,7 €,28,SI
+estivo,Contorni,Patate fritte,,7 €,29,SI
+estivo,Dolci,Frutti di bosco,,9 €,30,SI
+estivo,Dolci,Torte e dolci,,9 €,31,SI
+vini,Vini bianchi,Pinot Bianco A.A. Hofstatter,Trentino Alto Adige,24 €,1,SI
+vini,Vini bianchi,De Vite I.G.T Hofstatter,Trentino Alto Adige,24 €,2,SI
+vini,Vini bianchi,Gewurztraminer A.A. Hofstatter,Trentino Alto Adige,29 €,3,SI
+vini,Vini bianchi,Pinot bianco Jacobus Az. Agr. Averoldi,Lombardia,15 €,4,SI
+vini,Vini bianchi,Lugana Terecrea Pilardo,Lombardia,24 €,5,SI
+vini,Vini bianchi,Lugana DOC Vecchie Vigne,Lombardia,28 €,6,SI
+vini,Vini bianchi,Lugana Riserva Pilandro San Pietro,Lombardia,28 €,7,SI
+vini,Vini bianchi,Sauvignon Pitars,Friuli Venezia Giulia,30 €,8,SI
+vini,Vini bianchi,Friulano DOC Borgo delle oche,Friuli Venezia Giulia,33 €,9,SI
+vini,Vini bianchi,Vermentino Colli di Luni Monticello,Liguria,30 €,10,SI
+vini,Vini bianchi,Sur Sur Grillo Donnafugata,Sicilia,24 €,11,SI
+vini,Vini bianchi,Prìo Catarratto Donnafugata,Sicilia,24 €,12,SI
+vini,Vini rosati,Chiaretto Valtenesi Az. Agr. Averoldi,,20 €,13,SI
+vini,Vini rosati,Rosato Lumera (Sicilia) Donnafugata,,24 €,14,SI
+vini,Vini rosati,Rosato Colli di Luni (Liguria) Monticello,,25 €,15,SI
+vini,Vini rosati,Chiaretto Diamante (Lombardia) Comincioli,,34 €,16,SI
+vini,Vini bianchi esteri,Riesling Trochen Mosnella (DE) Dr Fisher,,30 €,17,SI
+vini,Vini bianchi esteri,Sancerre Blanc Jean Revery,,32 €,18,SI
+vini,Vini bianchi esteri,Chablis Chantemerle Boudin,,35 €,19,SI
+vini,Vini bianchi esteri,Riesling Expression Agape,,37 €,20,SI
+vini,Bianchi al bicchiere,Pinot Bianco Jacobus Az. Agr. Averoldi,,6 €,21,SI
+vini,Bianchi al bicchiere,Sur Sur Grillo Donnafugata,,6 €,22,SI
+vini,Bianchi al bicchiere,Metodo Classico,,9 €,23,SI
+vini,Bianchi al bicchiere,Prìo bianco Donnafugata,,6 €,24,SI
+vini,Vini da dessert,Moscato Caterina (Piemonte) frizzante,,15 €,25,SI
+vini,Vini da dessert,Passito Castel Beseno Salizzoni,,28 €,26,SI
+vini,Vini da dessert,Muscat de Rivesaltes Lafage,,25 €,27,SI
+vini,Vini da dessert,Passito Averoldi,,19 €,28,SI
+vini,Le bolle,Valdobbiadene Prosecco Serena 1881,Metodo Charmat,22 €,29,SI
+vini,Le bolle,Valdobbiadene Prosecco Superiore Vedova,Metodo Charmat,22 €,30,SI
+vini,Le bolle,Franciacorta Brut Ferghettina,Franciacorta,38 €,31,SI
+vini,Le bolle,Franciacorta Brut Facchetti,Franciacorta,38 €,32,SI
+vini,Le bolle,Franciacorta Satèn Facchetti,Franciacorta,45 €,33,SI
+vini,Le bolle,Franciacorta Nature Facchetti,Franciacorta,42 €,34,SI
+vini,Le bolle,Franciacorta Rosé (Occ de Pernis) Facchetti,Franciacorta,45 €,35,SI
+vini,Le bolle,Franciacorta Satèn DOCG Ferghettina,Franciacorta,55 €,36,SI
+vini,Le bolle,Crémant d’ Alsace Brut G. Prestige Bestheim,Champagne e Crémant,35 €,37,SI
+vini,Le bolle,Crémant d’ Alsace Brut Laugner,Champagne e Crémant,35 €,38,SI
+vini,Le bolle,Crémant d’ Alsace Brut Rosé Laugner,Champagne e Crémant,35 €,39,SI
+vini,Le bolle,Prestige Grand Cru Dauvergne,Champagne e Crémant,65 €,40,SI
+vini,Le bolle,Saphir Brut P . D. Grand Cru Dauvergne,Champagne e Crémant,75 €,41,SI
+vini,Le bolle,Tour Eiffel Grand Cru Reserue Familiae,Champagne e Crémant,85 €,42,SI
+vini,Le bolle,Oeil de Pedrix Grand Cru,Champagne e Crémant,80 €,43,SI
+vini,Le bolle,Fromentin Leclapart Brut,Champagne e Crémant,60 €,44,SI
+vini,Le bolle,Champagne Brut Ruinart,Champagne e Crémant,110 €,45,SI
+vini,Vini rossi,Marzemino d’Isera Ziresi Salizzoni,Trentino Alto Adige,29 €,46,SI
+vini,Vini rossi,Lagrein Alto Adige Hofstatter,Trentino Alto Adige,26 €,47,SI
+vini,Vini rossi,Pinot Nero Meczan A.A. Hofstatter,Trentino Alto Adige,26 €,48,SI
+vini,Vini rossi,Teroldego Edmund Mach Istituto S. Michele,Trentino Alto Adige,29 €,49,SI
+vini,Vini rossi,Cabernet Franc Pitars,Friuli Venezia Giulia,22 €,50,SI
+vini,Vini rossi,Refosco dal Peduncolo Rosso Pitars,Friuli Venezia Giulia,22 €,51,SI
+vini,Vini rossi,Merlot Borgo delle Oche,Friuli Venezia Giulia,24 €,52,SI
+vini,Vini rossi,Barbera d’Asti Vignalina,Piemonte,26 €,53,SI
+vini,Vini rossi,Dolcetto d’Alba Cascina Fontana,Piemonte,32 €,54,SI
+vini,Vini rossi,Nebbiolo Illegale S.Cristina,Piemonte,33 €,55,SI
+vini,Vini rossi,Nebbiolo d’Alba Nada Fiorenzo,Piemonte,43 €,56,SI
+vini,Vini rossi,Barbaresco DOCG Nada Fiorenzo,Piemonte,55 €,57,SI
+vini,Vini rossi,BaroloCiabot Berton La Morra,Piemonte,52 €,58,SI
+vini,Vini rossi,Groppello Notorious Az. Agr. Averoldi,Lombardia,15 €,59,SI
+vini,Vini rossi,Terre di Franciacorta Ferghettina,Lombardia,24 €,60,SI
+vini,Vini rossi,Sebino Rosso Carpediem Facchetti,Lombardia,28 €,61,SI
+vini,Vini rossi,Botticino Colle degli Ulivi Noventa,Lombardia,27 €,62,SI
+vini,Vini rossi,Grippo Averoldi,Lombardia,28 €,63,SI
+vini,Vini rossi,Valpolicella Ripasso superiore Soraighe,Veneto,28 €,64,SI
+vini,Vini rossi,Valpolicella Ripasso San Rocco Tedeschi,Veneto,30 €,65,SI
+vini,Vini rossi,Valpolicella Sup. Ruberpan Piero Pan,Veneto,34 €,66,SI
+vini,Vini rossi,Valpolicella Superiore Roccolo Grassi,Veneto,40 €,67,SI
+vini,Vini rossi,Amarone Marne 180 Tedeschi,Veneto,60 €,68,SI
+vini,Vini rossi,"Rosso Colli di Luni, Monticello",Liguria,24 €,69,SI
+vini,Vini rossi,Poggio delle Faine Minini,Toscana,23 €,70,SI
+vini,Vini rossi,Morellino di Scansano Poggio Brigante,Toscana,24 €,71,SI
+vini,Vini rossi,Chianti Classico Perano Frescobaldi,Toscana,30 €,72,SI
+vini,Vini rossi,Bolghieri Rosso Clarice Dario di Vaira,Toscana,32 €,73,SI
+vini,Vini rossi,Morellino di Scansano Arsura Riserva,Toscana,40 €,74,SI
+vini,Vini rossi,Chianti classico Castel Ruggero,Toscana,32 €,75,SI
+vini,Vini rossi,Brunello Castelgiocondo Frescobaldi,Toscana,66 €,76,SI
+vini,Vini rossi,Brunello di Montalcino Lazzeretti,Toscana,78 €,77,SI
+vini,Vini rossi,Lambrusco Terre Verdiane Ceci,Emilia Romagna,20 €,78,SI
+vini,Vini rossi,Otello Nero di Lambrusco Ceci,Emilia Romagna,22 €,79,SI
+vini,Vini rossi,Rosso Piceno Superiore Velenosi,Marche e Umbria,20 €,80,SI
+vini,Vini rossi,Montefalco Rosso Scacciadiavoli,Marche e Umbria,24 €,81,SI
+vini,Vini rossi,Meaculpa Rimorso Minini,Puglia,25 €,82,SI
+vini,Vini rossi,Negroamaro Tempio di Giano Vetrere,Puglia,25 €,83,SI
+vini,Vini rossi,Negroamaro Riserva Lago della P . Vetrere,Puglia,35 €,84,SI
+vini,Vini rossi,Primitivo del Salento Barone Pazzo,Puglia,35 €,85,SI
+vini,Vini rossi,Sherazade Nero d’Avola Donnafugata,Sicilia,24 €,86,SI
+vini,Vini rossi,Dea V. Etna Rosso DOC Donnafugata,Sicilia,28 €,87,SI
+vini,Vini rossi esteri,Bordeaux Rouge Sup Chateau Haut Mayne,,26 €,88,SI
+vini,Vini rossi esteri,L’Envolée de Saint Emilion La Peletre,,36 €,89,SI
+vini,Vini rossi esteri,Bourgogne pinot noir Domaine Petitot,,46 €,90,SI
+vini,Rossi al bicchiere,Groppello Notorious Az. Agr. Averoldi,,6 €,91,SI
+vini,Rossi al bicchiere,Terre di Franciacorta Ferghettina,,6 €,92,SI
+vini,Rossi al bicchiere,Rosso Piceno Sup. Brecciarolo,,6 €,93,SI
+vini,Rossi al bicchiere,Sherazade Nero d’Avola Donnafugata,,6 €,94,SI
+vini,Rossi al bicchiere,Cabernet Franc Pitars,,6 €,95,SI
