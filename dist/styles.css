@@ -72,17 +72,13 @@ section[id] { scroll-margin-top: 88px; }
 .section-shell h2 { margin: 17px 0 28px; font: 400 clamp(48px, 4.7vw, 75px)/1.14 var(--serif); letter-spacing: -.035em; text-wrap: balance; }
 .section-shell h2 em { color: var(--gold-light); font-weight: 400; }
 .section-shell p { line-height: 1.75; }
-.pillars { padding-top: 112px; padding-bottom: 126px; }
-.pillars-intro { display: grid; grid-template-columns: 1fr 2fr; align-items: start; gap: 50px; padding-bottom: 48px; }
-.pillars-intro .section-kicker { margin-top: 16px; }
-.pillars-intro h2 { max-width: 750px; margin: 0; }
-.pillars-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
-.pillar { min-height: 255px; padding: 33px 28px 35px 0; border-right: 1px solid var(--rule); }
-.pillar + .pillar { padding-left: 28px; }
+.pillars { padding-top: clamp(44px, 5vw, 72px); padding-bottom: clamp(52px, 5.5vw, 78px); background: var(--bg-soft); }
+.pillars-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.pillar { display: flex; flex-direction: column; align-items: center; min-height: 294px; padding: 0 clamp(16px, 2.6vw, 52px); border-right: 1px solid rgba(201, 169, 111, .32); text-align: center; }
 .pillar:last-child { border-right: 0; }
-.pillar-number { display: block; margin-bottom: 34px; color: var(--gold); font: 400 20px var(--serif); font-variant-numeric: tabular-nums; }
-.pillar h3 { max-width: 230px; margin: 0 0 13px; font: 400 clamp(23px, 2vw, 31px)/1.2 var(--serif); }
-.pillar p { max-width: 260px; margin: 0; color: var(--muted); font-size: 14px; }
+.pillar-icon { display: block; margin: 0 0 37px; color: var(--gold); font-family: "Material Symbols Outlined"; font-size: 70px; font-weight: 300; line-height: 1; font-feature-settings: "liga"; font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 48; }
+.pillar h3 { max-width: 285px; margin: 0 0 22px; font: 400 clamp(24px, 1.8vw, 36px)/1.2 var(--serif); text-align: center; }
+.pillar p { max-width: 300px; margin: 0; color: var(--muted); font-size: clamp(15px, 1vw, 20px); line-height: 1.65; text-align: center; }
 .story { display: grid; grid-template-columns: minmax(0, 43%) minmax(0, 57%); gap: clamp(35px, 5vw, 85px); align-items: center; padding-top: 130px; padding-bottom: 135px; background: var(--bg-soft); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
 .story-copy { padding: 8px 0 30px; }
 .story-copy p { max-width: 550px; color: #d0c4b5; font-size: 17px; }
@@ -201,9 +197,9 @@ section[id] { scroll-margin-top: 88px; }
   .hero-copy { padding: 30px 28px 23px 0; }
   .hero h1 { font-size: clamp(50px, 5.6vw, 66px); }
   .hero .button-light, .hero .button-outline { min-width: 0; padding-inline: 18px; font-size: 14px; }
-  .pillars-grid { grid-template-columns: 1fr 1fr; }
+  .pillars-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pillar:nth-child(2) { border-right: 0; }
-  .pillar:nth-child(-n + 2) { border-bottom: 1px solid var(--rule); }
+  .pillar:nth-child(-n + 2) { padding-bottom: 32px; margin-bottom: 32px; border-bottom: 1px solid rgba(201, 169, 111, .32); }
   .story { grid-template-columns: 1fr 1fr; gap: 35px; }
   .story-collage { min-height: 500px; }
   .menu-tabs { grid-template-columns: 1fr 1fr; }
@@ -232,15 +228,14 @@ section[id] { scroll-margin-top: 88px; }
   .proof-date em { font-size: 14px; }
   .hero-image-wrap { height: clamp(380px, 110vw, 510px); flex: 0 0 auto; }
   .section-shell h2 { font-size: clamp(44px, 9vw, 65px); }
-  .pillars, .story, .menu-section, .occasions, .reviews, .contact { padding-top: 82px; padding-bottom: 89px; }
-  .pillars-intro { display: block; padding-bottom: 32px; }
-  .pillars-intro h2 { margin-top: 19px; }
-  .pillars-grid { grid-template-columns: 1fr 1fr; }
-  .pillar, .pillar + .pillar { min-height: 235px; padding: 24px 13px 21px 0; }
-  .pillar:nth-child(even) { padding-left: 15px; }
-  .pillar-number { margin-bottom: 20px; }
-  .pillar h3 { font-size: 23px; }
-  .pillar p { font-size: 13px; }
+  .pillars { padding: 48px 20px 56px; }
+  .story, .menu-section, .occasions, .reviews, .contact { padding-top: 82px; padding-bottom: 89px; }
+  .pillars-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pillar { min-height: 0; padding: 0 12px 24px; }
+  .pillar:nth-child(-n + 2) { padding-bottom: 25px; margin-bottom: 25px; }
+  .pillar-icon { margin-bottom: 24px; font-size: 52px; }
+  .pillar h3 { margin-bottom: 14px; font-size: clamp(21px, 5.4vw, 25px); }
+  .pillar p { font-size: 14px; }
   .story { display: flex; flex-direction: column; gap: 42px; }
   .story-copy { padding: 0; }
   .story-copy p { font-size: 16px; }
