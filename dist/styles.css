@@ -128,12 +128,9 @@ section[id] { scroll-margin-top: 88px; }
 .menu-loading { padding: 30px 0; color: var(--muted); }
 .menu-notice { max-width: 900px; margin: 20px 0 0; color: #a59a8c; font-size: 12px; }
 .occasions { padding-top: 126px; padding-bottom: 130px; background: var(--bg-soft); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
-.occasions-intro { display: grid; grid-template-columns: 1fr 2fr; gap: 20px 50px; margin-bottom: 58px; }
-.occasions-intro .section-kicker { padding-top: 15px; }
-.occasions-intro h2 { margin: 0; }
-.occasions-intro p { grid-column: 2; max-width: 540px; margin: 0; color: var(--muted); }
-.occasions-link { display: inline-flex; gap: 35px; align-items: center; margin-top: 40px; padding-bottom: 5px; border-bottom: 1px solid var(--gold); color: var(--gold-light); font-size: 14px; font-weight: 500; text-decoration: none; }
-.occasions-link:hover { color: var(--ink); }
+.occasions-intro { display: flex; flex-direction: column; align-items: center; margin-bottom: 58px; text-align: center; }
+.occasions-intro h2 { max-width: 1050px; margin: 0; text-align: center; }
+.occasions-intro p { max-width: 700px; margin: 22px auto 0; color: var(--muted); text-align: center; }
 .reviews { display: grid; grid-template-columns: minmax(230px, 25%) minmax(0, 75%); gap: 20px; padding-top: 118px; padding-bottom: 128px; overflow: hidden; }
 .reviews-label { padding-right: 32px; }
 .reviews-label h2 { font-size: clamp(40px, 3.55vw, 59px); }
@@ -238,8 +235,7 @@ section[id] { scroll-margin-top: 88px; }
   .menu-panel-heading h3 { font-size: 30px; }
   .menu-panel-heading a { font-size: 11px; }
   .menu-items { grid-template-columns: 1fr; }
-  .occasions-intro { display: block; margin-bottom: 36px; }
-  .occasions-intro h2 { margin: 18px 0; }
+  .occasions-intro { margin-bottom: 36px; }
   .reviews { display: block; padding-right: 0; }
   .reviews-label { display: grid; grid-template-columns: 1fr auto; gap: 0 12px; padding-right: 26px; }
   .reviews-label .section-kicker, .reviews-label h2, .reviews-label p { grid-column: 1; }
