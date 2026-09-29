@@ -81,18 +81,19 @@ section[id] { scroll-margin-top: 88px; }
 .story-copy { padding: 8px 0 30px; }
 .story-copy p { max-width: 550px; color: #d0c4b5; font-size: 17px; }
 .story-copy .story-secondary { color: #a99e91; font-size: 15px; }
-.future-link { position: relative; display: inline-flex; gap: 30px; align-items: center; margin-top: 20px; padding-bottom: 7px; border-bottom: 1px solid var(--gold); color: var(--gold-light); font-size: 14px; font-weight: 500; }
+.story-highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 29px 0 0; padding: 19px 0 18px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); list-style: none; }
+.story-highlights li { display: flex; min-width: 0; flex-direction: column; gap: 4px; }
+.story-highlights strong { color: var(--gold-light); font: 500 17px/1.2 var(--serif); }
+.story-highlights li span { color: #a99e91; font-size: 12px; line-height: 1.45; }
+.future-link { position: relative; display: inline-flex; min-width: 260px; min-height: 68px; justify-content: center; align-items: center; margin-top: 27px; padding: 14px 28px; border: 0; border-radius: 90px; background: var(--gold); color: #1c1711; font-size: clamp(18px, 1.15vw, 22px); font-weight: 600; text-align: center; }
 .future-link small { position: absolute; top: 100%; left: 0; padding-top: 8px; color: #a99e91; font-size: 11px; font-weight: 400; white-space: nowrap; }
-.story-collage { position: relative; display: grid; grid-template-columns: 1fr .68fr; grid-template-rows: 1fr .68fr; gap: 15px; min-height: 550px; }
-.story-collage figure { position: relative; margin: 0; overflow: hidden; background: #d8c0a0; }
+.story-collage { position: relative; display: grid; grid-template-columns: 1fr .68fr; grid-template-rows: 1fr 1fr; gap: 15px; min-height: 550px; }
+.story-collage figure { position: relative; margin: 0; overflow: hidden; border: 1px solid rgba(201, 169, 111, .24); background: #d8c0a0; }
 .story-collage figure img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
 .story-collage figcaption { position: absolute; z-index: 2; right: 14px; bottom: 13px; padding: 6px 10px; background: rgba(22, 19, 16, .85); color: var(--ink); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
-.collage-grape { grid-row: 1 / 3; }
-.collage-grape img { object-position: center 35%; transform: scale(1.4); }
-.collage-season img { object-position: center 32%; transform: scale(1.2); }
-.collage-date { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; border: 1px solid var(--rule); color: var(--gold-light); text-align: center; }
-.collage-date span { font-size: 10px; letter-spacing: .17em; line-height: 1.5; text-transform: uppercase; }
-.collage-date strong { margin: 12px 0; font: 400 clamp(50px, 5vw, 78px) var(--serif); letter-spacing: -.05em; }
+.collage-tagliata { grid-column: 1; grid-row: 1 / 3; }
+.collage-filetto { grid-column: 2; grid-row: 1; }
+.collage-grigliata { grid-column: 2; grid-row: 2; }
 .menu-section { padding-top: 124px; padding-bottom: 132px; background: var(--bg); }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 50px; }
 .section-heading h2 { margin-bottom: 0; }
@@ -234,7 +235,14 @@ section[id] { scroll-margin-top: 88px; }
   .story { display: flex; flex-direction: column; gap: 42px; }
   .story-copy { padding: 0; }
   .story-copy p { font-size: 16px; }
+  .story-highlights { grid-template-columns: 1fr; gap: 12px; margin-top: 25px; padding: 16px 0; }
+  .story-highlights li { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .story-highlights strong { flex: 0 0 auto; font-size: 16px; }
+  .story-highlights li span { text-align: right; }
+  .future-link { width: min(100%, 360px); min-width: 0; }
   .story-collage { width: 100%; min-height: 420px; }
+  .story-collage { gap: 10px; }
+  .story-collage figcaption { right: 8px; bottom: 8px; padding: 5px 7px; font-size: 8px; }
   .section-heading { display: block; }
   .section-heading p { margin-top: 20px; }
   .menu-tabs { gap: 16px 12px; margin-top: 38px; }
