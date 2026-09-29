@@ -132,11 +132,6 @@ section[id] { scroll-margin-top: 88px; }
 .occasions-intro .section-kicker { padding-top: 15px; }
 .occasions-intro h2 { margin: 0; }
 .occasions-intro p { grid-column: 2; max-width: 540px; margin: 0; color: var(--muted); }
-.occasion-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 66px; border-top: 1px solid var(--rule); }
-.occasion { position: relative; display: grid; grid-template-columns: 80px 1fr; gap: 0 18px; align-content: center; min-height: 185px; padding: 28px 0; border-bottom: 1px solid var(--rule); }
-.occasion span { grid-row: 1 / 3; padding-top: 7px; color: var(--gold); font: 400 17px var(--serif); letter-spacing: .05em; }
-.occasion h3 { margin: 0 0 8px; font: 400 clamp(29px, 2.6vw, 41px)/1.15 var(--serif); }
-.occasion p { max-width: 340px; margin: 0; color: var(--muted); font-size: 14px; }
 .occasions-link { display: inline-flex; gap: 35px; align-items: center; margin-top: 40px; padding-bottom: 5px; border-bottom: 1px solid var(--gold); color: var(--gold-light); font-size: 14px; font-weight: 500; text-decoration: none; }
 .occasions-link:hover { color: var(--ink); }
 .reviews { display: grid; grid-template-columns: minmax(230px, 25%) minmax(0, 75%); gap: 20px; padding-top: 118px; padding-bottom: 128px; overflow: hidden; }
@@ -245,9 +240,6 @@ section[id] { scroll-margin-top: 88px; }
   .menu-items { grid-template-columns: 1fr; }
   .occasions-intro { display: block; margin-bottom: 36px; }
   .occasions-intro h2 { margin: 18px 0; }
-  .occasion-grid { grid-template-columns: 1fr; }
-  .occasion { min-height: 155px; grid-template-columns: 64px 1fr; }
-  .occasion h3 { font-size: 30px; }
   .reviews { display: block; padding-right: 0; }
   .reviews-label { display: grid; grid-template-columns: 1fr auto; gap: 0 12px; padding-right: 26px; }
   .reviews-label .section-kicker, .reviews-label h2, .reviews-label p { grid-column: 1; }
