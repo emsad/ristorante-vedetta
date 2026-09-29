@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0,0" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css?v=9">
+    <link rel="stylesheet" href="/styles.css?v=10">
     <script src="/script.js" defer></script>
   </head>
   <body>
@@ -82,12 +82,12 @@
       </section>
 
       <section class="menu-section section-shell" id="menu" aria-labelledby="menu-title">
-        <div class="section-heading menu-heading"><div><span class="section-kicker">A tavola con noi</span><h2 id="menu-title">Le nostre <em>carte.</em></h2></div><p>Scopri il menu estivo e la carta dei vini. Le proposte invernali e il dopo cena saranno disponibili prossimamente.</p></div>
+        <div class="menu-heading"><span class="section-kicker">A tavola con noi</span><h2 id="menu-title">Le nostre <em>carte.</em></h2><p>Dai piatti della stagione alla cantina e al dopo cena: scegli la carta da consultare.</p></div>
         <div class="menu-tabs" role="group" aria-label="Scegli una carta">
-          <button class="menu-tab active" type="button" data-menu="estivo" aria-controls="menu-panel" aria-expanded="true"><span class="menu-card-image cover-estivo"><img src="/assets/menu-estivo-cover.png" alt="" loading="lazy"></span><span class="menu-card-bottom"><span><small>01 · Le stagioni</small><strong>Menu estivo</strong></span><b aria-hidden="true">↗</b></span></button>
-          <button class="menu-tab" type="button" data-menu="invernale" aria-controls="menu-panel" aria-expanded="false"><span class="menu-card-image cover-invernale"><span class="cover-type" aria-hidden="true">Inverno</span><span>La stagione d'inverno</span></span><span class="menu-card-bottom"><span><small>02 · Le stagioni</small><strong>Menu invernale</strong></span><b aria-hidden="true">↗</b></span></button>
-          <button class="menu-tab" type="button" data-menu="vini" aria-controls="menu-panel" aria-expanded="false"><span class="menu-card-image cover-vini"><img src="/assets/carta-vini-cover.png" alt="" loading="lazy"></span><span class="menu-card-bottom"><span><small>03 · La cantina</small><strong>Carta dei vini</strong></span><b aria-hidden="true">↗</b></span></button>
-          <button class="menu-tab" type="button" data-menu="liquori" aria-controls="menu-panel" aria-expanded="false"><span class="menu-card-image cover-liquori"><span class="cover-type" aria-hidden="true">Liquori</span><span>Il dopo cena</span></span><span class="menu-card-bottom"><span><small>04 · Il dopo cena</small><strong>Carta dei liquori</strong></span><b aria-hidden="true">↗</b></span></button>
+          <button class="menu-tab active" type="button" data-menu="estivo" aria-controls="menu-panel" aria-expanded="true"><span class="menu-tab-icon" aria-hidden="true">restaurant_menu</span><strong>Menu estivo</strong><span class="menu-tab-description">Casoncelli, piatti di stagione e specialità dalla brace.</span></button>
+          <button class="menu-tab" type="button" data-menu="invernale" aria-controls="menu-panel" aria-expanded="false"><span class="menu-tab-icon" aria-hidden="true">local_fire_department</span><strong>Menu invernale</strong><span class="menu-tab-description">I sapori della cucina di casa nella stagione fredda.</span></button>
+          <button class="menu-tab" type="button" data-menu="vini" aria-controls="menu-panel" aria-expanded="false"><span class="menu-tab-icon" aria-hidden="true">wine_bar</span><strong>Carta dei vini</strong><span class="menu-tab-description">Etichette del territorio, Franciacorta e bottiglie da condividere.</span></button>
+          <button class="menu-tab" type="button" data-menu="liquori" aria-controls="menu-panel" aria-expanded="false"><span class="menu-tab-icon" aria-hidden="true">liquor</span><strong>Carta dei liquori</strong><span class="menu-tab-description">Amari, distillati e proposte per il dopo cena.</span></button>
         </div>
         <div class="menu-panel" id="menu-panel" aria-live="polite"><div class="menu-loading">Caricamento della carta…</div></div>
         <p class="menu-notice">I prezzi sono ripresi dai PDF forniti per questa bozza. Prima della pubblicazione al pubblico andranno verificati con il ristorante. Per allergie e intolleranze, avvisa sempre il personale.</p>
