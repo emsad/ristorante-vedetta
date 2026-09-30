@@ -134,7 +134,7 @@ section[id] { scroll-margin-top: 88px; }
 .occasion-layout { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: clamp(38px, 6vw, 92px); align-items: center; }
 .occasion-content { min-width: 0; }
 .occasions-intro { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 36px; text-align: left; }
-.occasions-intro h2 { max-width: 700px; margin: 0; text-align: left; }
+.occasions-intro h2 { max-width: 700px; margin: 0; font-size: clamp(44px, 4vw, 62px); text-align: left; }
 .occasions-intro p { max-width: 600px; margin: 22px 0 0; color: var(--muted); text-align: left; }
 .occasion-choices { display: flex; flex-direction: column; }
 .occasion-choice { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 18px; align-items: center; width: 100%; padding: 18px 16px; border: 0; border-bottom: 1px solid var(--rule); border-left: 2px solid transparent; background: transparent; color: var(--ink); text-align: left; transition: background .22s ease, border-color .22s ease; }
