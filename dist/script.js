@@ -101,34 +101,29 @@ fetch('/menus.json')
 menuTabs.forEach((tab) => tab.addEventListener('click', () => renderMenu(tab.dataset.menu)));
 
 const occasionImage = document.querySelector('#occasion-image');
-const occasionCaption = document.querySelector('#occasion-caption');
 const occasionChoices = [...document.querySelectorAll('.occasion-choice')];
 const occasionPhotos = {
   private: {
     src: '/assets/vedetta-occasione-cena-privata.jpg',
-    alt: 'Immagine illustrativa: tavolo riservato per una cena privata nella sala in legno della Vedetta.',
-    caption: 'Immagine illustrativa · Cene private'
+    alt: 'Tavolo riservato per una cena privata nella sala in legno del ristorante.'
   },
   celebration: {
     src: '/assets/vedetta-occasione-ricorrenza.jpg',
-    alt: 'Immagine illustrativa: torta con candeline e fiori per una ricorrenza nella sala del ristorante.',
-    caption: 'Immagine illustrativa · Ricorrenze'
+    alt: 'Torta con candeline e fiori per una ricorrenza nella sala del ristorante.'
   },
   business: {
     src: '/assets/vedetta-occasione-cena-aziendale-professionisti.jpg',
-    alt: 'Immagine illustrativa: tavolo apparecchiato per una cena aziendale in un ristorante tradizionale.',
-    caption: 'Immagine illustrativa · Cene aziendali'
+    alt: 'Colleghi riuniti per una cena aziendale in un ristorante.'
   },
   family: {
     src: '/assets/vedetta-occasione-pranzo-famiglia.jpg',
-    alt: 'Immagine illustrativa: famiglia riunita intorno a un pranzo con piatti da condividere.',
-    caption: 'Immagine illustrativa · Pranzi di famiglia'
+    alt: 'Famiglia riunita intorno a un pranzo con piatti da condividere.'
   }
 };
 
 occasionChoices.forEach((choice) => choice.addEventListener('click', () => {
   const photo = occasionPhotos[choice.dataset.occasion];
-  if (!photo || !occasionImage || !occasionCaption) return;
+  if (!photo || !occasionImage) return;
   occasionChoices.forEach((item) => {
     const active = item === choice;
     item.classList.toggle('is-active', active);
@@ -145,7 +140,6 @@ occasionChoices.forEach((choice) => choice.addEventListener('click', () => {
     occasionImage.onerror = null;
   };
   occasionImage.src = photo.src;
-  occasionCaption.textContent = photo.caption;
   if (occasionImage.complete && occasionImage.naturalWidth > 0) {
     occasionImage.classList.remove('is-changing');
     occasionImage.onload = null;
