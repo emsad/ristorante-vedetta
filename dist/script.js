@@ -35,16 +35,19 @@ function renderMenu(id) {
     tab.setAttribute('aria-expanded', String(active));
   });
   menuPanel.classList.toggle('menu-panel-summer', id === 'estivo');
-  const heading = makeElement('div', 'menu-panel-heading');
-  heading.append(makeElement('h3', '', menu.title));
-  if (menu.pdf) {
-    const pdf = makeElement('a', '', 'Apri la carta originale ↗');
-    pdf.href = menu.pdf;
-    pdf.target = '_blank';
-    pdf.rel = 'noopener noreferrer';
-    heading.append(pdf);
+  const contents = [];
+  if (id !== 'estivo') {
+    const heading = makeElement('div', 'menu-panel-heading');
+    heading.append(makeElement('h3', '', menu.title));
+    if (menu.pdf) {
+      const pdf = makeElement('a', '', 'Apri la carta originale ↗');
+      pdf.href = menu.pdf;
+      pdf.target = '_blank';
+      pdf.rel = 'noopener noreferrer';
+      heading.append(pdf);
+    }
+    contents.push(heading);
   }
-  const contents = [heading];
   if (menu.pending) {
     const empty = makeElement('div', 'menu-empty');
     empty.append(makeElement('strong', '', 'In preparazione'));
@@ -58,7 +61,7 @@ function renderMenu(id) {
         staticSummerGroup ? 'menu-group menu-group-static' : 'menu-group'
       );
       if (staticSummerGroup) {
-        const title = makeElement('h4', 'menu-group-title', `${group.name} · ${group.items.length}`);
+        const title = makeElement('h4', 'menu-group-title', group.name);
         title.id = `menu-category-${index}`;
         groupElement.setAttribute('aria-labelledby', title.id);
         groupElement.append(title);
