@@ -146,12 +146,15 @@ occasionChoices.forEach((choice) => choice.addEventListener('click', () => {
   }
 }));
 
-const reviewsViewport = document.querySelector('.reviews-viewport');
-const reviewCard = document.querySelector('.review-card');
-function scrollReviews(direction) {
-  if (!reviewsViewport || !reviewCard) return;
-  const step = reviewCard.getBoundingClientRect().width + 14;
-  reviewsViewport.scrollBy({left: step * direction, behavior: 'smooth'});
-}
-document.querySelector('.review-prev')?.addEventListener('click', () => scrollReviews(-1));
-document.querySelector('.review-next')?.addEventListener('click', () => scrollReviews(1));
+const reviewCards = [...document.querySelectorAll('.review-card')];
+const reviewDots = [...document.querySelectorAll('.review-dot')];
+reviewDots.forEach((dot, index) => dot.addEventListener('click', () => {
+  const card = reviewCards[index];
+  if (!card) return;
+  reviewDots.forEach((item, itemIndex) => {
+    const active = itemIndex === index;
+    item.classList.toggle('is-active', active);
+    item.setAttribute('aria-pressed', String(active));
+  });
+  card.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});
+}));

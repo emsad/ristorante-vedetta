@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0,0" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css?v=15">
-    <script src="/script.js?v=15" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=16">
+    <script src="/script.js?v=16" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -110,7 +110,38 @@
         </div>
       </section>
 
-      <section class="reviews section-shell" id="recensioni" aria-labelledby="reviews-title"><div class="reviews-label"><span class="section-kicker">I nostri ospiti</span><h2 id="reviews-title">Le parole<br><em>di chi torna.</em></h2><p>Questo spazio ospiterà recensioni reali e verificate.</p><div class="review-controls"><button class="review-prev" type="button" aria-label="Recensione precedente">←</button><button class="review-next" type="button" aria-label="Recensione successiva">→</button></div></div><div class="reviews-viewport" tabindex="0" aria-label="Anteprima del carosello delle recensioni"><div class="reviews-track"><article class="review-card"><span>01 / 03</span><div class="review-placeholder" aria-hidden="true">“</div><h3>Una voce autentica, presto qui.</h3><p>Inserire una recensione verificata e la sua fonte.</p></article><article class="review-card"><span>02 / 03</span><div class="review-placeholder" aria-hidden="true">“</div><h3>Le storie dei nostri ospiti.</h3><p>Inserire una recensione verificata e la sua fonte.</p></article><article class="review-card"><span>03 / 03</span><div class="review-placeholder" aria-hidden="true">“</div><h3>I ricordi di una serata.</h3><p>Inserire una recensione verificata e la sua fonte.</p></article></div></div></section>
+      <section class="reviews section-shell" id="recensioni" aria-labelledby="reviews-title">
+        <div class="reviews-label">
+          <span class="section-kicker">Cosa dicono i nostri clienti</span>
+          <h2 id="reviews-title">Esperienze che<br>parlano da sole</h2>
+        </div>
+        <div class="reviews-carousel">
+          <div class="reviews-viewport" tabindex="0" aria-label="Recensioni degli ospiti">
+            <div class="reviews-track">
+              <article class="review-card">
+                <span class="review-quote" aria-hidden="true">“</span>
+                <blockquote>Una voce autentica, presto qui.</blockquote>
+                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Recensione in attesa</strong><span>Testimonianza da verificare</span></footer>
+              </article>
+              <article class="review-card">
+                <span class="review-quote" aria-hidden="true">“</span>
+                <blockquote>Le storie dei nostri ospiti.</blockquote>
+                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Recensione in attesa</strong><span>Fonte da verificare</span></footer>
+              </article>
+              <article class="review-card">
+                <span class="review-quote" aria-hidden="true">“</span>
+                <blockquote>I ricordi di una serata.</blockquote>
+                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Recensione in attesa</strong><span>Testimonianza da verificare</span></footer>
+              </article>
+            </div>
+          </div>
+          <div class="review-dots" role="group" aria-label="Scegli una recensione">
+            <button class="review-dot is-active" type="button" aria-label="Mostra la prima recensione" aria-pressed="true"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la seconda recensione" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la terza recensione" aria-pressed="false"></button>
+          </div>
+        </div>
+      </section>
 
       <section class="contact section-shell" id="contatti" aria-labelledby="contact-title"><div class="contact-main"><span class="section-kicker">Prenotazioni e contatti</span><h2 id="contact-title">Ci vediamo<br><em>alla Vedetta?</em></h2><p>Per informazioni e prenotazioni, chiamaci. Il collegamento WhatsApp verrà attivato dopo aver verificato il numero dedicato con il ristorante.</p><div class="contact-actions"><a class="button button-light" href="tel:+390303754296">Chiama il ristorante <span aria-hidden="true">↗</span></a><button class="whatsapp-pending" type="button" disabled title="Numero WhatsApp da confermare">WhatsApp · da attivare</button></div></div><div class="contact-details"><div class="contact-detail"><span>Ci trovi qui</span><strong>Via Buttafuoco 21<br>25123 Brescia</strong><a href="https://www.google.com/maps/search/?api=1&query=Via+Buttafuoco+21%2C+Brescia" target="_blank" rel="noopener noreferrer">Apri le indicazioni ↗</a></div><div class="contact-detail"><span>Telefonaci</span><strong><a href="tel:+390303754296">+39 030 375 4296</a></strong></div><div class="contact-detail"><span>Orari</span><strong>Da verificare con il ristorante</strong></div></div></section>
     </main>
