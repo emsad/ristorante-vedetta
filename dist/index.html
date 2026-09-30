@@ -93,7 +93,38 @@
         <p class="menu-notice">I prezzi sono ripresi dai PDF forniti per questa bozza. Prima della pubblicazione al pubblico andranno verificati con il ristorante. Per allergie e intolleranze, avvisa sempre il personale.</p>
       </section>
 
-      <section class="occasions section-shell" id="occasioni" aria-labelledby="occasions-title"><div class="occasions-intro"><h2 id="occasions-title">Ogni incontro merita<br><em>il suo posto a tavola.</em></h2><p>Quattro proposte da definire con il ristorante, per dare spazio alle occasioni che contano.</p></div><div class="pillars-grid"><article class="pillar"><span class="pillar-icon" aria-hidden="true">celebration</span><h3>Cene private</h3><p>Una serata da condividere con i tuoi ospiti.</p></article><article class="pillar"><span class="pillar-icon" aria-hidden="true">cake</span><h3>Ricorrenze</h3><p>Un tavolo per celebrare un momento speciale.</p></article><article class="pillar"><span class="pillar-icon" aria-hidden="true">business_center</span><h3>Cene aziendali</h3><p>Un'occasione per ritrovarsi anche fuori dall'ufficio.</p></article><article class="pillar"><span class="pillar-icon" aria-hidden="true">groups</span><h3>Pranzi di famiglia</h3><p>Il tempo di stare insieme, intorno alla tavola.</p></article></div></section>
+      <section class="occasions section-shell" id="occasioni" aria-labelledby="occasions-title">
+        <div class="occasion-layout">
+          <div class="occasion-content">
+            <div class="occasions-intro">
+              <h2 id="occasions-title">Ogni incontro merita<br><em>il suo posto a tavola.</em></h2>
+              <p>Una sala raccolta, la cucina di casa e il piacere di ritrovarsi: scegli l’occasione che vuoi festeggiare.</p>
+            </div>
+            <div class="occasion-choices" role="group" aria-label="Scegli l’occasione">
+              <button class="occasion-choice is-active" type="button" data-occasion="private" aria-pressed="true">
+                <span class="occasion-choice-icon" aria-hidden="true">celebration</span>
+                <span class="occasion-choice-copy"><strong>Cene private</strong><span>Una serata da condividere con i tuoi ospiti.</span></span>
+              </button>
+              <button class="occasion-choice" type="button" data-occasion="celebration" aria-pressed="false">
+                <span class="occasion-choice-icon" aria-hidden="true">cake</span>
+                <span class="occasion-choice-copy"><strong>Ricorrenze</strong><span>Un tavolo speciale per celebrare un momento importante.</span></span>
+              </button>
+              <button class="occasion-choice" type="button" data-occasion="business" aria-pressed="false">
+                <span class="occasion-choice-icon" aria-hidden="true">business_center</span>
+                <span class="occasion-choice-copy"><strong>Cene aziendali</strong><span>Un’occasione per ritrovarsi anche fuori dall’ufficio.</span></span>
+              </button>
+              <button class="occasion-choice" type="button" data-occasion="family" aria-pressed="false">
+                <span class="occasion-choice-icon" aria-hidden="true">groups</span>
+                <span class="occasion-choice-copy"><strong>Pranzi di famiglia</strong><span>Il tempo di stare insieme, intorno alla tavola.</span></span>
+              </button>
+            </div>
+          </div>
+          <figure class="occasion-visual">
+            <img id="occasion-image" src="/assets/vedetta-occasione-cena-privata.jpg" alt="Immagine illustrativa: tavolo riservato per una cena privata nella sala in legno della Vedetta." loading="lazy">
+            <figcaption id="occasion-caption">Immagine illustrativa · Cene private</figcaption>
+          </figure>
+        </div>
+      </section>
 
       <section class="reviews section-shell" id="recensioni" aria-labelledby="reviews-title"><div class="reviews-label"><span class="section-kicker">I nostri ospiti</span><h2 id="reviews-title">Le parole<br><em>di chi torna.</em></h2><p>Questo spazio ospiterà recensioni reali e verificate.</p><div class="review-controls"><button class="review-prev" type="button" aria-label="Recensione precedente">←</button><button class="review-next" type="button" aria-label="Recensione successiva">→</button></div></div><div class="reviews-viewport" tabindex="0" aria-label="Anteprima del carosello delle recensioni"><div class="reviews-track"><article class="review-card"><span>01 / 03</span><div class="review-placeholder" aria-hidden="true">“</div><h3>Una voce autentica, presto qui.</h3><p>Inserire una recensione verificata e la sua fonte.</p></article><article class="review-card"><span>02 / 03</span><div class="review-placeholder" aria-hidden="true">“</div><h3>Le storie dei nostri ospiti.</h3><p>Inserire una recensione verificata e la sua fonte.</p></article><article class="review-card"><span>03 / 03</span><div class="review-placeholder" aria-hidden="true">“</div><h3>I ricordi di una serata.</h3><p>Inserire una recensione verificata e la sua fonte.</p></article></div></div></section>
 

@@ -34,6 +34,7 @@ function renderMenu(id) {
     tab.classList.toggle('active', active);
     tab.setAttribute('aria-expanded', String(active));
   });
+  menuPanel.classList.toggle('menu-panel-summer', id === 'estivo');
   const heading = makeElement('div', 'menu-panel-heading');
   heading.append(makeElement('h3', '', menu.title));
   if (menu.pdf) {
@@ -51,9 +52,20 @@ function renderMenu(id) {
     contents.push(empty);
   } else {
     menu.groups.forEach((group, index) => {
-      const details = makeElement('details', 'menu-group');
-      if (index === 0) details.open = true;
-      details.append(makeElement('summary', '', `${group.name} · ${group.items.length}`));
+      const staticSummerGroup = id === 'estivo';
+      const groupElement = makeElement(
+        staticSummerGroup ? 'section' : 'details',
+        staticSummerGroup ? 'menu-group menu-group-static' : 'menu-group'
+      );
+      if (staticSummerGroup) {
+        const title = makeElement('h4', 'menu-group-title', `${group.name} · ${group.items.length}`);
+        title.id = `menu-category-${index}`;
+        groupElement.setAttribute('aria-labelledby', title.id);
+        groupElement.append(title);
+      } else {
+        if (index === 0) groupElement.open = true;
+        groupElement.append(makeElement('summary', '', `${group.name} · ${group.items.length}`));
+      }
       const items = makeElement('div', 'menu-items');
       group.items.forEach((item) => {
         const row = makeElement('div', 'menu-item');
@@ -63,8 +75,8 @@ function renderMenu(id) {
         row.append(info, makeElement('span', 'menu-item-price', item.price));
         items.append(row);
       });
-      details.append(items);
-      contents.push(details);
+      groupElement.append(items);
+      contents.push(groupElement);
     });
   }
   menuPanel.replaceChildren(...contents);
@@ -84,6 +96,58 @@ fetch('/menus.json')
   });
 
 menuTabs.forEach((tab) => tab.addEventListener('click', () => renderMenu(tab.dataset.menu)));
+
+const occasionImage = document.querySelector('#occasion-image');
+const occasionCaption = document.querySelector('#occasion-caption');
+const occasionChoices = [...document.querySelectorAll('.occasion-choice')];
+const occasionPhotos = {
+  private: {
+    src: '/assets/vedetta-occasione-cena-privata.jpg',
+    alt: 'Immagine illustrativa: tavolo riservato per una cena privata nella sala in legno della Vedetta.',
+    caption: 'Immagine illustrativa · Cene private'
+  },
+  celebration: {
+    src: '/assets/vedetta-occasione-ricorrenza.jpg',
+    alt: 'Immagine illustrativa: torta con candeline e fiori per una ricorrenza nella sala del ristorante.',
+    caption: 'Immagine illustrativa · Ricorrenze'
+  },
+  business: {
+    src: '/assets/vedetta-occasione-cena-aziendale.jpg',
+    alt: 'Immagine illustrativa: tavolo apparecchiato per una cena aziendale in un ristorante tradizionale.',
+    caption: 'Immagine illustrativa · Cene aziendali'
+  },
+  family: {
+    src: '/assets/vedetta-occasione-pranzo-famiglia.jpg',
+    alt: 'Immagine illustrativa: famiglia riunita intorno a un pranzo con piatti da condividere.',
+    caption: 'Immagine illustrativa · Pranzi di famiglia'
+  }
+};
+
+occasionChoices.forEach((choice) => choice.addEventListener('click', () => {
+  const photo = occasionPhotos[choice.dataset.occasion];
+  if (!photo || !occasionImage || !occasionCaption) return;
+  occasionChoices.forEach((item) => {
+    const active = item === choice;
+    item.classList.toggle('is-active', active);
+    item.setAttribute('aria-pressed', String(active));
+  });
+  occasionImage.classList.add('is-changing');
+  occasionImage.alt = photo.alt;
+  occasionImage.onload = () => {
+    occasionImage.classList.remove('is-changing');
+    occasionImage.onload = null;
+  };
+  occasionImage.onerror = () => {
+    occasionImage.classList.remove('is-changing');
+    occasionImage.onerror = null;
+  };
+  occasionImage.src = photo.src;
+  occasionCaption.textContent = photo.caption;
+  if (occasionImage.complete && occasionImage.naturalWidth > 0) {
+    occasionImage.classList.remove('is-changing');
+    occasionImage.onload = null;
+  }
+}));
 
 const reviewsViewport = document.querySelector('.reviews-viewport');
 const reviewCard = document.querySelector('.review-card');
