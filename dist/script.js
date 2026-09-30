@@ -112,7 +112,7 @@ const occasionPhotos = {
     caption: 'Immagine illustrativa · Ricorrenze'
   },
   business: {
-    src: '/assets/vedetta-occasione-cena-aziendale.jpg',
+    src: '/assets/vedetta-occasione-cena-aziendale-professionisti.jpg',
     alt: 'Immagine illustrativa: tavolo apparecchiato per una cena aziendale in un ristorante tradizionale.',
     caption: 'Immagine illustrativa · Cene aziendali'
   },
