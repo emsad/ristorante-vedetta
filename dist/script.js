@@ -146,15 +146,94 @@ occasionChoices.forEach((choice) => choice.addEventListener('click', () => {
   }
 }));
 
+const reviewSection = document.querySelector('#recensioni');
+const reviewViewport = document.querySelector('.reviews-viewport');
 const reviewCards = [...document.querySelectorAll('.review-card')];
 const reviewDots = [...document.querySelectorAll('.review-dot')];
-reviewDots.forEach((dot, index) => dot.addEventListener('click', () => {
-  const card = reviewCards[index];
-  if (!card) return;
-  reviewDots.forEach((item, itemIndex) => {
-    const active = itemIndex === index;
-    item.classList.toggle('is-active', active);
-    item.setAttribute('aria-pressed', String(active));
+const reviewArrows = [...document.querySelectorAll('[data-review-direction]')];
+const reviewRotation = document.querySelector('.review-rotation');
+const reducedMotionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+let activeReviewIndex = Math.max(0, reviewDots.findIndex((dot) => dot.classList.contains('is-active')));
+let reviewAutoplayEnabled = !reducedMotionPreference.matches;
+let reviewPointerInside = false;
+let reviewAutoplayTimer = null;
+
+function updateReviewRotationControl() {
+  if (!reviewRotation) return;
+  const label = reviewAutoplayEnabled ? 'Metti in pausa l’avanzamento automatico' : 'Avvia l’avanzamento automatico';
+  reviewRotation.setAttribute('aria-label', label);
+  reviewRotation.setAttribute('aria-pressed', String(reviewAutoplayEnabled));
+  reviewRotation.title = label;
+  const icon = reviewRotation.querySelector('span');
+  if (icon) icon.textContent = reviewAutoplayEnabled ? 'Ⅱ' : '▶';
+}
+
+function scheduleReviewAutoplay() {
+  window.clearTimeout(reviewAutoplayTimer);
+  reviewAutoplayTimer = null;
+  if (!reviewAutoplayEnabled || reviewPointerInside || document.hidden || reviewCards.length < 2) return;
+  reviewAutoplayTimer = window.setTimeout(() => {
+    reviewAutoplayTimer = null;
+    showReview(activeReviewIndex + 1);
+  }, 2500);
+}
+
+function showReview(index) {
+  if (!reviewCards.length) return;
+  activeReviewIndex = (index + reviewCards.length) % reviewCards.length;
+  reviewDots.forEach((dot, dotIndex) => {
+    const active = dotIndex === activeReviewIndex;
+    dot.classList.toggle('is-active', active);
+    dot.setAttribute('aria-pressed', String(active));
   });
-  card.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});
+  const card = reviewCards[activeReviewIndex];
+  if (reviewViewport && card) {
+    const viewportRect = reviewViewport.getBoundingClientRect();
+    const cardRect = card.getBoundingClientRect();
+    const mobile = window.matchMedia('(max-width: 700px)').matches;
+    const centerOffset = mobile ? 0 : (reviewViewport.clientWidth - cardRect.width) / 2;
+    const target = reviewViewport.scrollLeft + cardRect.left - viewportRect.left - centerOffset;
+    reviewViewport.scrollTo({
+      left: Math.max(0, target),
+      behavior: reducedMotionPreference.matches ? 'auto' : 'smooth'
+    });
+  }
+  scheduleReviewAutoplay();
+}
+
+reviewDots.forEach((dot, index) => dot.addEventListener('click', () => showReview(index)));
+reviewArrows.forEach((arrow) => arrow.addEventListener('click', () => {
+  showReview(activeReviewIndex + (arrow.dataset.reviewDirection === 'previous' ? -1 : 1));
 }));
+reviewRotation?.addEventListener('click', () => {
+  reviewAutoplayEnabled = !reviewAutoplayEnabled;
+  if (reviewAutoplayEnabled) reviewPointerInside = false;
+  updateReviewRotationControl();
+  scheduleReviewAutoplay();
+});
+reviewSection?.addEventListener('pointerenter', () => {
+  reviewPointerInside = true;
+  window.clearTimeout(reviewAutoplayTimer);
+  reviewAutoplayTimer = null;
+});
+reviewSection?.addEventListener('pointerleave', () => {
+  reviewPointerInside = false;
+  scheduleReviewAutoplay();
+});
+reviewSection?.addEventListener('focusin', () => {
+  reviewAutoplayEnabled = false;
+  updateReviewRotationControl();
+  window.clearTimeout(reviewAutoplayTimer);
+  reviewAutoplayTimer = null;
+});
+document.addEventListener('visibilitychange', scheduleReviewAutoplay);
+reducedMotionPreference.addEventListener?.('change', (event) => {
+  if (event.matches) {
+    reviewAutoplayEnabled = false;
+    updateReviewRotationControl();
+    window.clearTimeout(reviewAutoplayTimer);
+    reviewAutoplayTimer = null;
+  }
+});
+updateReviewRotationControl();
+scheduleReviewAutoplay();

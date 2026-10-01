@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0,0" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css?v=18">
-    <script src="/script.js?v=18" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=19">
+    <script src="/script.js?v=19" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -110,10 +110,15 @@
         </div>
       </section>
 
-      <section class="reviews section-shell" id="recensioni" aria-labelledby="reviews-title">
+      <section class="reviews section-shell" id="recensioni" aria-labelledby="reviews-title" aria-roledescription="carosello">
         <div class="reviews-label">
           <span class="section-kicker">Cosa dicono i nostri clienti</span>
           <h2 id="reviews-title">Esperienze che<br>parlano da sole</h2>
+          <div class="review-controls" role="group" aria-label="Controlli delle recensioni">
+            <button class="review-arrow" type="button" data-review-direction="previous" aria-label="Recensione precedente"><span aria-hidden="true">←</span></button>
+            <button class="review-rotation" type="button" aria-label="Metti in pausa l’avanzamento automatico" aria-pressed="true"><span aria-hidden="true">Ⅱ</span></button>
+            <button class="review-arrow" type="button" data-review-direction="next" aria-label="Recensione successiva"><span aria-hidden="true">→</span></button>
+          </div>
         </div>
         <div class="reviews-carousel">
           <div class="reviews-viewport" tabindex="0" aria-label="Recensioni degli ospiti">
