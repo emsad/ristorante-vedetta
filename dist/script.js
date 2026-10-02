@@ -104,19 +104,19 @@ const occasionImage = document.querySelector('#occasion-image');
 const occasionChoices = [...document.querySelectorAll('.occasion-choice')];
 const occasionPhotos = {
   private: {
-    src: '/assets/vedetta-occasione-cena-privata.jpg',
+    src: '/assets/vedetta-occasione-cena-privata.webp',
     alt: 'Tavolo riservato per una cena privata nella sala in legno del ristorante.'
   },
   celebration: {
-    src: '/assets/vedetta-occasione-ricorrenza.jpg',
+    src: '/assets/vedetta-occasione-ricorrenza.webp',
     alt: 'Torta con candeline e fiori per una ricorrenza nella sala del ristorante.'
   },
   business: {
-    src: '/assets/vedetta-occasione-cena-aziendale-professionisti.jpg',
+    src: '/assets/vedetta-occasione-cena-aziendale-professionisti.webp',
     alt: 'Colleghi riuniti per una cena aziendale in un ristorante.'
   },
   family: {
-    src: '/assets/vedetta-occasione-pranzo-famiglia.jpg',
+    src: '/assets/vedetta-occasione-pranzo-famiglia.webp',
     alt: 'Famiglia riunita intorno a un pranzo con piatti da condividere.'
   }
 };
