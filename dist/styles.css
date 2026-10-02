@@ -36,7 +36,7 @@ section[id] { scroll-margin-top: 88px; }
 .primary-nav { display: flex; align-items: center; gap: clamp(16px, 2.35vw, 36px); }
 .primary-nav a { padding: 12px 0; color: var(--ink); font-size: 20px; font-weight: 500; text-decoration: none; white-space: nowrap; border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
 .primary-nav a:hover, .primary-nav a:focus-visible { color: var(--gold-light); border-color: var(--gold); }
-.header-cta { justify-self: end; display: inline-flex; align-items: center; justify-content: center; min-width: 205px; padding: 14px 22px; border-radius: 90px; background: var(--gold); color: #1c1711; font-size: 20px; font-weight: 600; text-decoration: none; transition: background .2s, transform .2s; }
+.header-cta { justify-self: end; display: inline-flex; align-items: center; justify-content: center; min-width: 205px; padding: 14px 22px; border-radius: 90px; background: var(--gold); color: #fff; font-size: 20px; font-weight: 600; text-decoration: none; transition: background .2s, transform .2s; }
 .header-cta:hover { background: var(--gold-hover); transform: translateY(-2px); }
 .header-cta:active, .button:active { transform: translateY(1px); }
 .nav-toggle { display: none; padding: 8px; border: 0; background: none; }
