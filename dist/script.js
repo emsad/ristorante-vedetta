@@ -143,7 +143,17 @@ fetch('/menus.json')
     if (menuPanel) menuPanel.textContent = 'La carta non è disponibile in questo momento. Puoi consultare il PDF originale.';
   });
 
-menuTabs.forEach((tab) => tab.addEventListener('click', () => renderMenu(tab.dataset.menu)));
+menuTabs.forEach((tab) => tab.addEventListener('click', () => {
+  if (!menuData) return;
+  renderMenu(tab.dataset.menu);
+  if (!mobileNavBreakpoint.matches || !menuPanel) return;
+  window.requestAnimationFrame(() => {
+    menuPanel.scrollIntoView({
+      block: 'start',
+      behavior: reducedMotionPreference.matches ? 'instant' : 'smooth'
+    });
+  });
+}));
 
 const occasionImage = document.querySelector('#occasion-image');
 const occasionChoices = [...document.querySelectorAll('.occasion-choice')];
