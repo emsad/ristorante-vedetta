@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0,0" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css?v=26">
-    <script src="/script.js?v=20" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=42">
+    <script src="/script.js?v=26" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -25,10 +25,21 @@
       </a>
       <button class="nav-toggle" type="button" aria-label="Apri il menu" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="Navigazione principale">
-        <a href="#storia">La storia</a>
-        <a href="#menu">I menu</a>
-        <a href="#occasioni">Le occasioni</a>
-        <a href="#contatti">Contatti</a>
+        <div class="mobile-nav-panel">
+          <a class="wordmark mobile-nav-brand" href="#inizio" aria-label="Vedetta, torna all'inizio">
+            <span class="wordmark-small">ristorante</span>
+            <span class="wordmark-main">Vedetta</span>
+            <span class="wordmark-date">dal 1959</span>
+          </a>
+          <div class="mobile-nav-links">
+            <a href="#storia">La storia</a>
+            <a href="#menu">I menu</a>
+            <a href="#occasioni">Le occasioni</a>
+            <a href="#recensioni">Le recensioni</a>
+            <a href="#contatti">Contatti</a>
+          </div>
+          <a class="mobile-nav-cta" href="#contatti">Prenota un tavolo</a>
+        </div>
       </nav>
       <a class="header-cta" href="#contatti">Prenota un tavolo</a>
     </header>
@@ -36,12 +47,13 @@
     <main id="contenuto">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-image-wrap" aria-hidden="true">
-          <img class="hero-image" src="/assets/vedetta-placeholder.webp" alt="" fetchpriority="high">
+          <img class="hero-image is-active" src="/assets/vedetta-hero-panoramica.webp" alt="" fetchpriority="high">
+          <img class="hero-image" src="/assets/vedetta-hero-terrazza.webp" alt="" loading="eager" fetchpriority="low">
         </div>
         <div class="hero-copy">
-          <div class="eyebrow">Brescia · Dal 1959</div>
+          <div class="eyebrow">Ristorante Vedetta · Dal 1959</div>
           <h1 id="hero-title">Le cose buone<br><em>non passano mai.</em></h1>
-          <p>Una tavola sui Ronchi di Brescia, dove ritrovare i sapori della cucina bresciana, il piacere di stare insieme e i piatti della Vedetta.</p>
+          <p>Dal 1959 la famiglia Dorici vi accoglie sui Ronchi di Brescia, con la cucina tradizionale bresciana e una splendida vista sulla città.</p>
           <div class="hero-actions">
             <a class="button button-light" href="#menu">Scopri i menu</a>
             <a class="button button-outline" href="#contatti">Prenota un tavolo</a>
@@ -51,15 +63,15 @@
 
       <section class="pillars section-shell" aria-label="I valori della Vedetta">
         <div class="pillars-grid">
-          <article class="pillar"><span class="pillar-icon" aria-hidden="true">menu_book</span><h3>Menu della tradizione</h3><p>I sapori bresciani della Vedetta, accanto alle proposte che seguono la stagione.</p></article>
-          <article class="pillar"><span class="pillar-icon" aria-hidden="true">eco</span><h3>Ingredienti di stagione</h3><p>Materie prime selezionate e sapori del territorio, nel loro momento migliore.</p></article>
-          <article class="pillar"><span class="pillar-icon" aria-hidden="true">cottage</span><h3>Esperienza intima</h3><p>Una sala accogliente sui Ronchi, per ritrovarsi intorno alla stessa tavola.</p></article>
-          <article class="pillar"><span class="pillar-icon" aria-hidden="true">room_service</span><h3>Servizio impeccabile</h3><p>Un'accoglienza premurosa e discreta, con cura in ogni dettaglio.</p></article>
+          <article class="pillar"><span class="pillar-icon" aria-hidden="true">menu_book</span><h3>Menu della tradizione</h3><p>Dal 1959 la famiglia Dorici custodisce i sapori autentici della cucina bresciana.</p></article>
+          <article class="pillar"><span class="pillar-icon" aria-hidden="true">eco</span><h3>Qualità e genuinità</h3><p>La qualità culinaria incontra il gusto e la genuinità dei sapori autentici.</p></article>
+          <article class="pillar"><span class="pillar-icon" aria-hidden="true">cottage</span><h3>Una vista speciale</h3><p>Sui Ronchi, immersi nel verde e affacciati sulla città di Brescia.</p></article>
+          <article class="pillar"><span class="pillar-icon" aria-hidden="true">room_service</span><h3>Professionalità</h3><p>La professionalità che da sempre contraddistingue il Ristorante Vedetta.</p></article>
         </div>
       </section>
 
       <section class="story section-shell" id="storia" aria-labelledby="story-title">
-        <div class="story-copy"><span class="section-kicker">La nostra storia</span><h2 id="story-title">La Vedetta,<br><em>da sempre a tavola.</em></h2><p>Dal 1959 il nome Vedetta accompagna pranzi, cene e incontri sui Ronchi di Brescia. Il menu custodisce alcuni sapori che tornano volentieri a tavola: casoncelli al burro e salvia, funghi porcini, polenta e piatti dalla brace.</p><p class="story-secondary">Ogni stagione porta qualcosa di nuovo, accanto ai piatti che è bello ritrovare.</p><span class="future-link">La storia completa</span></div>
+        <div class="story-copy"><span class="section-kicker">La nostra storia</span><h2 id="story-title">La Vedetta,<br><em>da sempre a tavola.</em></h2><p>Dal 1959 la famiglia Dorici accoglie sui Ronchi di Brescia, portando in tavola la cucina tradizionale bresciana e la genuinità dei sapori autentici.</p><p class="story-secondary">A soli 5 km dal centro, la veranda panoramica e le sale raccolte offrono una cornice familiare per pranzi, cene e momenti da ricordare.</p><span class="future-link">La storia completa</span></div>
         <div class="story-collage" aria-label="Tre fotografie di piatti di carne">
           <figure class="collage-tagliata"><img src="/assets/vedetta-tagliata-manzo.webp" alt="Tagliata di manzo con rucola e scaglie di grana" loading="lazy"></figure>
           <figure class="collage-filetto"><img src="/assets/vedetta-filetto-pepe-verde.webp" alt="Filetto di manzo al pepe verde" loading="lazy"></figure>
@@ -83,24 +95,24 @@
           <div class="occasion-content">
             <div class="occasions-intro">
               <h2 id="occasions-title">Ogni incontro merita<br><em>il suo posto a tavola.</em></h2>
-              <p>Una sala raccolta, la cucina di casa e il piacere di ritrovarsi: scegli l’occasione che vuoi festeggiare.</p>
+              <p>La terrazza panoramica e le sale raccolte accolgono cerimonie, cene aziendali e momenti da condividere in famiglia.</p>
             </div>
             <div class="occasion-choices" role="group" aria-label="Scegli l’occasione">
               <button class="occasion-choice is-active" type="button" data-occasion="private" aria-pressed="true">
                 <span class="occasion-choice-icon" aria-hidden="true">celebration</span>
-                <span class="occasion-choice-copy"><strong>Cene private</strong><span>Una serata da condividere con i tuoi ospiti.</span></span>
+                <span class="occasion-choice-copy"><strong>Cene private</strong><span>Una cornice panoramica per stare insieme ai tuoi ospiti.</span></span>
               </button>
               <button class="occasion-choice" type="button" data-occasion="celebration" aria-pressed="false">
                 <span class="occasion-choice-icon" aria-hidden="true">cake</span>
-                <span class="occasion-choice-copy"><strong>Ricorrenze</strong><span>Un tavolo speciale per celebrare un momento importante.</span></span>
+                <span class="occasion-choice-copy"><strong>Ricorrenze</strong><span>Cerimonie e feste da custodire tra i ricordi più belli.</span></span>
               </button>
               <button class="occasion-choice" type="button" data-occasion="business" aria-pressed="false">
                 <span class="occasion-choice-icon" aria-hidden="true">business_center</span>
-                <span class="occasion-choice-copy"><strong>Cene aziendali</strong><span>Un’occasione per ritrovarsi anche fuori dall’ufficio.</span></span>
+                <span class="occasion-choice-copy"><strong>Cene aziendali</strong><span>Cene, incontri e meeting con proposte personalizzabili.</span></span>
               </button>
               <button class="occasion-choice" type="button" data-occasion="family" aria-pressed="false">
                 <span class="occasion-choice-icon" aria-hidden="true">groups</span>
-                <span class="occasion-choice-copy"><strong>Pranzi di famiglia</strong><span>Il tempo di stare insieme, intorno alla tavola.</span></span>
+                <span class="occasion-choice-copy"><strong>Pranzi di famiglia</strong><span>La tradizione della festa in un ambiente familiare.</span></span>
               </button>
             </div>
           </div>
@@ -113,7 +125,7 @@
       <section class="reviews section-shell" id="recensioni" aria-labelledby="reviews-title" aria-roledescription="carosello">
         <div class="reviews-label">
           <span class="section-kicker">Cosa dicono i nostri clienti</span>
-          <h2 id="reviews-title">Esperienze che<br>parlano da sole</h2>
+          <h2 id="reviews-title">Esperienze che<br><em>parlano da sole.</em></h2>
           <div class="review-controls" role="group" aria-label="Controlli delle recensioni">
             <button class="review-arrow" type="button" data-review-direction="previous" aria-label="Recensione precedente"><span aria-hidden="true">←</span></button>
             <button class="review-rotation" type="button" aria-label="Metti in pausa l’avanzamento automatico" aria-pressed="true"><span aria-hidden="true">Ⅱ</span></button>
@@ -121,67 +133,118 @@
           </div>
         </div>
         <div class="reviews-carousel">
-          <div class="reviews-viewport" tabindex="0" aria-label="Recensioni dimostrative per provare il carosello">
+          <div class="reviews-viewport" tabindex="0" aria-label="Recensioni degli ospiti">
             <div class="reviews-track">
               <article class="review-card">
                 <span class="review-quote" aria-hidden="true">“</span>
-                <blockquote>Una cena davvero piacevole: piatti della tradizione curati e un’atmosfera accogliente, perfetta per stare insieme.</blockquote>
-                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Ospite demo 01</strong><span>Recensione di prova</span></footer>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Pranzo domenicale in questo luogo con una vista mozzafiato. Menù non troppo ampio ma ricercato.</blockquote>
+                <footer class="review-author"><strong>Nicola I.</strong></footer>
               </article>
               <article class="review-card">
                 <span class="review-quote" aria-hidden="true">“</span>
-                <blockquote>Abbiamo festeggiato un’occasione speciale alla Vedetta. Il servizio è stato gentile e la serata è passata in un attimo.</blockquote>
-                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Ospite demo 02</strong><span>Recensione di prova</span></footer>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Ristorante unico per la vasta vista su Brescia. Riferimento per mangiare della carne alla brace, ma non solo.</blockquote>
+                <footer class="review-author"><strong>Marco C.</strong></footer>
               </article>
               <article class="review-card">
                 <span class="review-quote" aria-hidden="true">“</span>
-                <blockquote>Una bella scoperta sui Ronchi: cucina di casa, porzioni generose e una sala raccolta in cui si conversa volentieri.</blockquote>
-                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Ospite demo 03</strong><span>Recensione di prova</span></footer>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Pranzo domenicale con amici in una location incantevole, con vista mozzafiato su tutta Brescia. Cibo ottimo e atmosfera rilassante.</blockquote>
+                <footer class="review-author"><strong>Barbara S.</strong></footer>
               </article>
               <article class="review-card">
                 <span class="review-quote" aria-hidden="true">“</span>
-                <blockquote>I casoncelli erano ottimi e il personale ci ha fatto sentire a nostro agio. Ci piacerebbe tornare per provare la carta dei vini.</blockquote>
-                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Ospite demo 04</strong><span>Recensione di prova</span></footer>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Da anni frequentiamo il ristorante e MAI ci ha deluso! Mangiare sempre buono, servizio semplice ma efficace e puntuale.</blockquote>
+                <footer class="review-author"><strong>Riccardo C.</strong></footer>
               </article>
               <article class="review-card">
                 <span class="review-quote" aria-hidden="true">“</span>
-                <blockquote>Un pranzo in famiglia riuscito: piatti bresciani, tempi rilassati e un ambiente piacevole per tutte le generazioni.</blockquote>
-                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Ospite demo 05</strong><span>Recensione di prova</span></footer>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Ristorante a carattere familiare con vista spettacolare sulla città. Cucina tipica bresciana. Si sta sempre bene.</blockquote>
+                <footer class="review-author"><strong>Pierfrancesco F.</strong></footer>
               </article>
               <article class="review-card">
                 <span class="review-quote" aria-hidden="true">“</span>
-                <blockquote>Ci siamo fermati per un pranzo tra amici. I piatti erano saporiti e l’ambiente rilassato ci ha fatto dimenticare l’orologio.</blockquote>
-                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Ospite demo 06</strong><span>Recensione di prova</span></footer>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Ottima location con vista meravigliosa sulla città, ampi spazi sia interni che esterni, cucina casalinga e semplice.</blockquote>
+                <footer class="review-author"><strong>Antonino P.</strong></footer>
               </article>
               <article class="review-card">
                 <span class="review-quote" aria-hidden="true">“</span>
-                <blockquote>Atmosfera raccolta, attenzione gentile e una cena da ricordare. Una bella idea per festeggiare in tranquillità.</blockquote>
-                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Ospite demo 07</strong><span>Recensione di prova</span></footer>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Posto raffinato ma alla mano, conduzione familiare di indubbia qualità, menù di lavoro difficilmente trovabile…</blockquote>
+                <footer class="review-author"><strong>Ivan M.</strong></footer>
               </article>
               <article class="review-card">
                 <span class="review-quote" aria-hidden="true">“</span>
-                <blockquote>È stato bello ritrovare i sapori bresciani in una sala accogliente. Anche la selezione dei vini ha accompagnato bene la cena.</blockquote>
-                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Ospite demo 08</strong><span>Recensione di prova</span></footer>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Un ottimo ristorante per un pranzo o una cena in un ambiente ospitale. Dalla terrazza panoramica una vista che vi piacerà.</blockquote>
+                <footer class="review-author"><strong>Stefano P.</strong></footer>
               </article>
               <article class="review-card">
                 <span class="review-quote" aria-hidden="true">“</span>
-                <blockquote>Un posto in cui prendersi il tempo per mangiare bene e stare in compagnia. Ci torneremmo volentieri.</blockquote>
-                <footer class="review-author"><span class="review-avatar" aria-hidden="true">person</span><strong>Ospite demo 09</strong><span>Recensione di prova</span></footer>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Bellissima location, calda e accogliente. Ottimo il cibo soprattutto il filetto di manzo al cognac flambè.</blockquote>
+                <footer class="review-author"><strong>Simona S.</strong></footer>
+              </article>
+              <article class="review-card">
+                <span class="review-quote" aria-hidden="true">“</span>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Locale con vista mozzafiato su Brescia. Piatti speciali. Grigliata mista favolosa e carta dei vini molto varia.</blockquote>
+                <footer class="review-author"><strong>Giovanni P.</strong></footer>
+              </article>
+              <article class="review-card">
+                <span class="review-quote" aria-hidden="true">“</span>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Ci siamo fermati per un aperitivo… Degustato in terrazza con una vista splendida su Brescia…</blockquote>
+                <footer class="review-author"><strong>Franca S.</strong></footer>
+              </article>
+              <article class="review-card">
+                <span class="review-quote" aria-hidden="true">“</span>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Brescia dall’alto. Se vuoi toglierti la calura della città o della bassa…</blockquote>
+                <footer class="review-author"><strong>Franco R.</strong></footer>
+              </article>
+              <article class="review-card">
+                <span class="review-quote" aria-hidden="true">“</span>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Stupenda location, Davide top ottimo consiglio sul menù, vista mozzafiato e personale gentile.</blockquote>
+                <footer class="review-author"><strong>Andrea P.</strong></footer>
+              </article>
+              <article class="review-card">
+                <span class="review-quote" aria-hidden="true">“</span>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Ristorante caratteristico in Maddalena, grande e accogliente. Noi abbiamo mangiato costata e filetto con contorni e dolce, tutto ottimo.</blockquote>
+                <footer class="review-author"><strong>Alice M.</strong></footer>
+              </article>
+              <article class="review-card">
+                <span class="review-quote" aria-hidden="true">“</span>
+                <span class="review-rating" aria-label="5 stelle su 5">★★★★★</span>
+                <blockquote>Se cerchi una cucina tipica, buona, con un servizio presente, molto cordiale e con una vista sulla città più bella del nord Italia…</blockquote>
+                <footer class="review-author"><strong>Marcello B.</strong></footer>
               </article>
             </div>
           </div>
           <div class="review-dots" role="group" aria-label="Scegli una recensione">
-            <button class="review-dot is-active" type="button" aria-label="Mostra la prima recensione" aria-pressed="true"></button>
-            <button class="review-dot" type="button" aria-label="Mostra la seconda recensione" aria-pressed="false"></button>
-            <button class="review-dot" type="button" aria-label="Mostra la terza recensione" aria-pressed="false"></button>
-            <button class="review-dot" type="button" aria-label="Mostra la quarta recensione" aria-pressed="false"></button>
-            <button class="review-dot" type="button" aria-label="Mostra la quinta recensione" aria-pressed="false"></button>
-            <button class="review-dot" type="button" aria-label="Mostra la sesta recensione" aria-pressed="false"></button>
-            <button class="review-dot" type="button" aria-label="Mostra la settima recensione" aria-pressed="false"></button>
-            <button class="review-dot" type="button" aria-label="Mostra l’ottava recensione" aria-pressed="false"></button>
-            <button class="review-dot" type="button" aria-label="Mostra la nona recensione" aria-pressed="false"></button>
+            <button class="review-dot is-active" type="button" aria-label="Mostra la recensione 1" aria-pressed="true"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 2" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 3" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 4" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 5" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 6" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 7" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 8" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 9" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 10" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 11" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 12" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 13" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 14" aria-pressed="false"></button>
+            <button class="review-dot" type="button" aria-label="Mostra la recensione 15" aria-pressed="false"></button>
           </div>
-          <p class="review-demo-note">Testi dimostrativi per provare il carosello; da sostituire con recensioni reali verificate.</p>
+          <p class="review-source-note">Estratti da recensioni Google · <a href="https://www.google.com/maps/place/Vedetta/@45.5429041,10.2413503,17z/data=!3m1!4b1!4m6!3m5!1s0x4781762291163263:0xbb0051afa2ff1984!8m2!3d45.5429041!4d10.2413503!16s%2Fg%2F1tcy7rky?entry=ttu" target="_blank" rel="noopener noreferrer">Leggi su Google Maps</a></p>
         </div>
       </section>
 
@@ -189,7 +252,7 @@
         <div class="contact-main">
           <span class="section-kicker">Prenotazioni e contatti</span>
           <h2 id="contact-title">Ci vediamo<br><em>alla Vedetta?</em></h2>
-          <p>Per informazioni e prenotazioni, chiamaci. Il collegamento WhatsApp verrà attivato dopo aver verificato il numero dedicato con il ristorante.</p>
+          <p>Per informazioni e prenotazioni, chiamaci o scrivici. La prenotazione è gradita.</p>
           <div class="contact-actions">
             <a class="button button-light" href="tel:+390303754296">Chiama il ristorante</a>
             <button class="whatsapp-pending" type="button" disabled title="Numero WhatsApp da confermare">WhatsApp</button>
@@ -197,12 +260,21 @@
           <div class="contact-details">
             <div class="contact-detail">
               <span>Indirizzo</span>
-              <strong>Via Buttafuoco 21 - 25123 Brescia</strong>
+              <strong>Via Buttafuoco, 21 · Ronchi, Brescia</strong>
+            </div>
+            <div class="contact-detail">
+              <span>Telefono</span>
+              <strong><a href="tel:+390303754296">030 375 4296</a> · <a href="tel:+390303772208">030 377 2208</a></strong>
+            </div>
+            <div class="contact-detail">
+              <span>Email</span>
+              <strong><a href="mailto:ristorantevedetta@gmail.com">ristorantevedetta@gmail.com</a></strong>
             </div>
             <div class="contact-detail contact-hours">
-              <span>Orari provvisori</span>
-              <strong>Lun–Ven · 12:00–14:30 e 19:00–22:30</strong>
-              <strong>Sab–Dom · 12:00–15:00 e 19:00–23:00</strong>
+              <span>Informazioni</span>
+              <strong>Chiuso il mercoledì · Prenotazione gradita</strong>
+              <strong>Carte di credito accettate · Ampio parcheggio</strong>
+              <strong>Spazio dedicato ai bambini</strong>
             </div>
           </div>
         </div>
@@ -212,6 +284,6 @@
       </section>
     </main>
 
-    <footer class="site-footer"><a class="wordmark footer-wordmark" href="#inizio" aria-label="Vedetta, torna all'inizio"><span class="wordmark-small">ristorante</span><span class="wordmark-main">Vedetta</span><span class="wordmark-date">dal 1959</span></a><p>Le cose buone non passano mai.</p><nav aria-label="Collegamenti nel footer"><a href="#storia">Storia</a><a href="#menu">Menu</a><a href="#occasioni">Occasioni</a><a href="#contatti">Contatti</a></nav></footer>
+    <footer class="site-footer"><a class="wordmark footer-wordmark" href="#inizio" aria-label="Vedetta, torna all'inizio"><span class="wordmark-small">ristorante</span><span class="wordmark-main">Vedetta</span><span class="wordmark-date">dal 1959</span></a><p>Le cose buone non passano mai.</p><nav aria-label="Collegamenti nel footer"><a href="#storia">Storia</a><a href="#menu">Menu</a><a href="#occasioni">Occasioni</a><a href="#recensioni">Recensioni</a><a href="#contatti">Contatti</a></nav></footer>
   </body>
 </html>
