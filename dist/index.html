@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300,0,0" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css?v=43">
+    <link rel="stylesheet" href="/styles.css?v=44">
     <script src="/script.js?v=27" defer></script>
   </head>
   <body>
@@ -94,7 +94,7 @@
         <div class="occasion-layout">
           <div class="occasion-content">
             <div class="occasions-intro">
-              <h2 id="occasions-title">Ogni incontro merita<br><em>il suo posto a tavola.</em></h2>
+              <h2 id="occasions-title"><span class="occasion-title-lead">Ogni incontro merita</span> <em>il suo posto a tavola.</em></h2>
               <p>La terrazza panoramica e le sale raccolte accolgono cerimonie, cene aziendali e momenti da condividere in famiglia.</p>
             </div>
             <div class="occasion-choices" role="group" aria-label="Scegli l’occasione">
@@ -125,7 +125,7 @@
       <section class="reviews section-shell" id="recensioni" aria-labelledby="reviews-title" aria-roledescription="carosello">
         <div class="reviews-label">
           <span class="section-kicker">Cosa dicono i nostri clienti</span>
-          <h2 id="reviews-title">Esperienze che<br><em>parlano da sole.</em></h2>
+          <h2 id="reviews-title">Esperienze <span class="review-title-tail">che&nbsp;<em>parlano da sole.</em></span></h2>
           <div class="review-controls" role="group" aria-label="Controlli delle recensioni">
             <button class="review-arrow" type="button" data-review-direction="previous" aria-label="Recensione precedente"><span aria-hidden="true">←</span></button>
             <button class="review-rotation" type="button" aria-label="Metti in pausa l’avanzamento automatico" aria-pressed="true"><span aria-hidden="true">Ⅱ</span></button>
@@ -263,12 +263,11 @@
               <strong>Via Buttafuoco, 21 · Ronchi, Brescia</strong>
             </div>
             <div class="contact-detail">
-              <span>Telefono</span>
-              <strong><a href="tel:+390303754296">030 375 4296</a> · <a href="tel:+390303772208">030 377 2208</a></strong>
-            </div>
-            <div class="contact-detail">
-              <span>Email</span>
-              <strong><a href="mailto:ristorantevedetta@gmail.com">ristorantevedetta@gmail.com</a></strong>
+              <span>Telefono e email</span>
+              <div class="contact-methods">
+                <strong><a href="tel:+390303754296">030 375 4296</a> · <a href="tel:+390303772208">030 377 2208</a></strong>
+                <strong><a href="mailto:ristorantevedetta@gmail.com">ristorantevedetta@gmail.com</a></strong>
+              </div>
             </div>
             <div class="contact-detail contact-hours">
               <span>Informazioni</span>
